@@ -7,10 +7,19 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Footer = () => {
+    const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   return (
-    <div className=''>
+    <motion.div
+    ref={ref1}
+    initial={{height:0,opacity:0}}
+    animate={inView1 ? {height:"100%",opacity:1} : {}}
+    transition={{duration:1, delay:1,ease:'backInOut'}}
+    className=''>
       <div className=' section md:px-10 md:grid md:grid-cols-2 md:place-items-start md:gap-10 border-b-2 pb-5 border-[#291770] pr-5 2lg:grid-cols-4 2lg:mx-auto'>
         <div className=' mb-7'>
             <div className=' mb-7'>
@@ -88,7 +97,7 @@ const Footer = () => {
       <div className=' border-t border-black pt-5 pb-3'>
         <div className=' text-center'>copyright©2024 <span className=' font-semibold text-[#e87817]'>Absy IT Solutions</span></div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -3,20 +3,62 @@ import { IoLocationSharp } from "react-icons/io5";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { FaThumbsUp } from "react-icons/fa";
 import Footer from './Footer';
+import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion"
 
 const Contact = () => {
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+  const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+  const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true });
+  const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: true });
+  const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: true });
+  const { ref: ref7, inView: inView7 } = useInView({ triggerOnce: true });
+  const { ref: ref8, inView: inView8 } = useInView({ triggerOnce: true });
+  const { ref: ref9, inView: inView9 } = useInView({ triggerOnce: true });
+  const { ref: ref10, inView: inView10 } = useInView({ triggerOnce: true });
+  const { ref: ref11, inView: inView11 } = useInView({ triggerOnce: true });
+  const { ref: ref12, inView: inView12 } = useInView({ triggerOnce: true });
+  const { ref: ref13, inView: inView13 } = useInView({ triggerOnce: true });
+  const { ref: ref14, inView: inView14 } = useInView({ triggerOnce: true });
+  const { ref: ref15, inView: inView15 } = useInView({ triggerOnce: true });
+  const { ref: ref16, inView: inView16 } = useInView({ triggerOnce: true });
+  const { ref: ref17, inView: inView17 } = useInView({ triggerOnce: true });
+  const { ref: ref18, inView: inView18 } = useInView({ triggerOnce: true });
+  const { ref: ref19, inView: inView19 } = useInView({ triggerOnce: true });
+  const { ref: ref20, inView: inView20 } = useInView({ triggerOnce: true });
+  const { ref: ref21, inView: inView21 } = useInView({ triggerOnce: true });
+  const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
+  const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
+  const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
+
   return (
     <div>
-      <section className=' section md:px-10 mt-10'>
+      <section className=' section md:px-10 mt-24'>
         <div>
           <div className='mb-10'>
-            <div className=' text-2xl font-bold mb-5 text-center'>Our Office</div>
-            <div className=' text-center md:px-10 lg:px-20 2lg:px-52'>Reach out to Absy Solutions for any inquiries or support. Our dedicated team is here to assist you. Visit our office, call us, or send an email to connect with us. We look forward to helping you achieve your business goals.</div>
+            <motion.div
+            ref={ref1}
+            initial={{opacity:0}}
+            animate={inView1 ? {opacity:1} : {}}
+            transition={{duration:1,delay:1,ease:'backInOut'}}
+            className=' text-2xl font-bold mb-5 text-center'>Our Office</motion.div>
+            <motion.div
+            ref={ref2}
+            initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+            animate={inView2 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+            transition={{ duration: 2, ease: "easeInOut" }}
+            className=' text-center md:px-10 lg:px-20 2lg:px-52'>Reach out to Absy Solutions for any inquiries or support. Our dedicated team is here to assist you. Visit our office, call us, or send an email to connect with us. We look forward to helping you achieve your business goals.</motion.div>
           </div>
 
           <div className=' grid grid-cols-1 place-items-center gap-10 mb-10 md:grid-cols-2 lg:grid-cols-3'>
             {/* Contact Details-1 */}
-            <div className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
+            <motion.div
+             ref={ref3}
+             initial={{y:100, opacity:0, scale:0}}
+             animate={inView3 ? {y:0, opacity:1,scale:1} : {}}
+             transition={{duration:1,delay:1,ease:'circInOut'}}
+            className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
               <div>
                 <IoLocationSharp className=' text-3xl text-[#e87817]'/>
               </div>
@@ -25,9 +67,13 @@ const Contact = () => {
                 <div><div>Ground Floor No. 57/19, 8th Cross,
                 Bharathi Layout, SG Palya, Bangalore - 560029</div></div>
               </div>
-            </div>
+            </motion.div>
             {/* Contact Details-2 */}
-            <div className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
+            <motion.div
+            ref={ref4}
+            initial={{y:100, opacity:0, scale:0}}
+            animate={inView4 ? {y:0, opacity:1,scale:1} : {}}
+            className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
               <div>
                 <BiSolidPhoneCall className=' text-3xl text-[#e87817]'/>
               </div>
@@ -36,9 +82,13 @@ const Contact = () => {
                 <div><div>+91 7411071274, <span className=''>+91 9632718876,</span><span className='inline-block'>+91 9916245165, </span><span className=' inline-block'>+91 90363 47975</span></div></div>
                 <div className='mt-2'>absyitsolutions@gmail.com</div>
               </div>
-            </div>
+            </motion.div>
             {/* Contact-Detail-3 */}
-            <div className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
+            <motion.div
+            ref={ref5}
+            initial={{y:100, opacity:0, scale:0}}
+            animate={inView5 ? {y:0, opacity:1,scale:1} : {}}
+            className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
               <div>
                 <FaThumbsUp className=' text-3xl text-[#e87817]'/>
               </div>
@@ -47,13 +97,18 @@ const Contact = () => {
                 <div><div>Ground Floor No. 57/19, 8th Cross,
                 Bharathi Layout, SG Palya, Bangalore - 560029</div></div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       <section className=' mb-10'>
-      <div className='flex justify-center'>
+      <motion.div
+      ref={ref6}
+      initial={{y:-100,scale:0, opacity:0}}
+      animate={inView6 ? {y:0, opacity:1,scale:1} :{}}
+      transition={{duration:.8,delay:1,ease:'anticipate'}}
+      className='flex justify-center'>
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6741021527146!2d77.6066919!3d12.9286555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1500075f3745%3A0x1f982880ffd46928!2sAbsy%20it%20solutions!5e0!3m2!1sen!2sin!4v1720525464020!5m2!1sen!2sin"
             width="100%"
@@ -63,7 +118,7 @@ const Contact = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade">
           </iframe>
-        </div>
+        </motion.div>
       </section>
 
       <section>

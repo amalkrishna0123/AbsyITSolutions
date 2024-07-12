@@ -14,8 +14,34 @@ import animation1 from "../assets/software-business.png"
 import animation2 from "../assets/animation3.png"
 import animation3 from "../assets/animation2.png"
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
+
 
 const Softwares = () => {
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+  const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+  const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true });
+  const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: true });
+  const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: true });
+  const { ref: ref7, inView: inView7 } = useInView({ triggerOnce: true });
+  const { ref: ref8, inView: inView8 } = useInView({ triggerOnce: true });
+  const { ref: ref9, inView: inView9 } = useInView({ triggerOnce: true });
+  const { ref: ref10, inView: inView10 } = useInView({ triggerOnce: true });
+  const { ref: ref11, inView: inView11 } = useInView({ triggerOnce: true });
+  const { ref: ref12, inView: inView12 } = useInView({ triggerOnce: true });
+  const { ref: ref13, inView: inView13 } = useInView({ triggerOnce: true });
+  const { ref: ref14, inView: inView14 } = useInView({ triggerOnce: true });
+  const { ref: ref15, inView: inView15 } = useInView({ triggerOnce: true });
+  const { ref: ref16, inView: inView16 } = useInView({ triggerOnce: true });
+  const { ref: ref17, inView: inView17 } = useInView({ triggerOnce: true });
+  const { ref: ref18, inView: inView18 } = useInView({ triggerOnce: true });
+  const { ref: ref19, inView: inView19 } = useInView({ triggerOnce: true });
+  const { ref: ref20, inView: inView20 } = useInView({ triggerOnce: true });
+  const { ref: ref21, inView: inView21 } = useInView({ triggerOnce: true });
+  const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
+  const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
+  const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
   return (
     <div>
       <div className='fixed blur-[30px] w-full h-full bg-[#b6db31a2] -z-50'></div>
@@ -28,13 +54,15 @@ const Softwares = () => {
         </div>
         <div>
           <motion.div
+          ref={ref1}
           initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-          animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+          animate={inView1 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
           transition={{ duration: 2, ease: "easeInOut" }}
           className='font-bold text-2xl mb-5 lg:text-[42px] lg:leading-[45px]'>Elevate Your Business <span className=' block'>with Our Software</span></motion.div>
           <motion.div
+          ref={ref2}
           initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-          animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+          animate={inView2 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
           transition={{ duration: 2.5, ease: "easeInOut" }}
           >At Absy Solutions, our transformative software solutions are crafted to drive business success. 
           We offer innovative, tailored software that enhances efficiency and supports growth, seamlessly integrating into 
@@ -47,11 +75,12 @@ const Softwares = () => {
         <div>
           <div className=' grid place-items-center grid-cols-1 items-start justify-center gap-10 md:grid-cols-2 max-w-[1200px] lg:mx-auto'>
             <motion.div
+            ref={ref3}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView3 ? {y:0, opacity:1} : {}}
             transition={{duration:1,delay:1, ease:'backInOut'}}
-            className='BoxHover w-full h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
-              <div className='font-semibold text-lg mb-5'>
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3 '>
                 <img className=' w-[150px]' src={task} alt="" />
               </div>
               <div>TASK'OS is a Windows-based financial software that aids businesses in managing financial transactions, stock levels, 
@@ -61,11 +90,12 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref4}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView4 ? {y:0, opacity:1} : {}}
             transition={{duration:1.2,delay:1.2, ease:'backInOut'}}
-            className='BoxHover w-full h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
-              <div className='font-semibold text-lg mb-5'>
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
                 <img className=' w-[150px]' src={shade} alt="" />
               </div>
               <div>Shade Hospital Management Software is a flexible solution for hospitals and clinics, offering tools for patient management, 
@@ -74,11 +104,12 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref5}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView5 ? {y:0, opacity:1} : {}}
             transition={{duration:1.4,delay:1.4, ease:'backInOut'}}
-            className='BoxHover w-full h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
-              <div className='font-semibold text-lg mb-5'>
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
                 <img className=' w-[150px]' src={vtask} alt="" />
               </div>
               <div>VTASK is a Pharmacy Management software that automates inventory, revenue, and billing processes, providing 
@@ -88,11 +119,12 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref6}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView6 ? {y:0, opacity:1} : {}}
             transition={{duration:1.6,delay:1.6, ease:'backInOut'}}
-            className='BoxHover w-full h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
-              <div className='font-semibold text-lg mb-5'>
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
                 <img className=' w-[150px]' src={dine} alt="" />
               </div>
               <div>DINE is a restaurant management software that streamlines ordering, billing, and payment processes, 
@@ -101,11 +133,12 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref7}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={ inView7 ? {y:0, opacity:1} : {}}
             transition={{duration:1.8,delay:1.8, ease:'backInOut'}}
-            className='BoxHover w-full h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
-              <div className='font-semibold text-lg mb-5'>
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
                 <img className=' w-[150px]' src={clublogoc} alt="" />
               </div>
               <div>Club Logic is a software designed for fitness clubs and gyms, enhancing operations like membership management, attendance, 
@@ -114,11 +147,12 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref8}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView8 ? {y:0, opacity:1} : {}}
             transition={{duration:2,delay:2, ease:'backInOut'}}
-            className='BoxHover w-full h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
-              <div className='font-semibold text-lg mb-5'>
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
                 <img className=' w-[70px]' src={magnet} alt="" />
               </div>
               <div>Magnet is a digital platform that streamlines school operations, improving data accuracy and communication. 
@@ -127,11 +161,12 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref9}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView9 ? {y:0, opacity:1} : {}}
             transition={{duration:2.1,delay:2.1, ease:'backInOut'}}
-            className='BoxHover w-full h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
-              <div className='font-semibold text-lg mb-5'>
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
                 <img className=' w-[150px]' src={auric} alt="" />
               </div>
               <div>Auric is a software solution for jewellery retailers, wholesalers, and manufacturers, assisting in inventory management, 
@@ -140,11 +175,12 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref10}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView10 ? {y:0, opacity:1} : {}}
             transition={{duration:2.1,delay:2.2, ease:'backInOut'}}
-            className='BoxHover w-full h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
-              <div className='font-semibold text-lg mb-5'>
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
                 <img className=' w-[150px]' src={starstay} alt="" />
               </div>
               <div>STARSTAY is a user-friendly hotel management software that streamlines operations like front-desk management, 
@@ -165,8 +201,9 @@ const Softwares = () => {
           <div className=' text-2xl font-bold mb-10 text-center lg:text-[42px]'>Why Choose Us ?</div>
           <div className=' grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center'>
             <motion.div
+            ref={ref11}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView11 ? {y:0, opacity:1} : {}}
             transition={{duration:1,delay:1, ease:'backInOut'}}
             className='ScaleUpImg w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
               <div className=''>
@@ -179,8 +216,9 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref12}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView12 ? {y:0, opacity:1} : {}}
             transition={{duration:1.2,delay:1.2, ease:'backInOut'}}
             className='ScaleUpImg w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
               <div className=''>
@@ -193,8 +231,9 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref13}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView13 ? {y:0, opacity:1} : {}}
             transition={{duration:1.4,delay:1.4, ease:'backInOut'}}
             className='ScaleUpImg w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
               <div className=''>
@@ -208,8 +247,9 @@ const Softwares = () => {
 
 
             <motion.div
+            ref={ref14}
             initial={{y:-100, opacity:0}}
-            animate={{y:0, opacity:1}}
+            animate={inView14 ? {y:0, opacity:1} : {}}
             transition={{duration:1.8,delay:1.8, ease:'backInOut'}}
             className='ScaleUpImg w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
               <div className=''>
@@ -234,20 +274,23 @@ const Softwares = () => {
           <div className=' md:flex md:justify-center md:items-center md:gap-10 mb-10'>
             <div className='md:w-[50%]'>
               <motion.div
+              ref={ref15}
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-              animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+              animate={inView15 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2 }}
                className='font-bold text-2xl mb-5 lg:text-[42px] lg:mb-10'>Our Services & Processing</motion.div>
               <motion.div
+              ref={ref16}
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-              animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+              animate={inView16 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2.4, ease: "easeInOut" }}
               className=' mb-10'>At Absy Solutions, we pride ourselves on delivering top-notch software services that cater to a wide range of business needs. Our comprehensive approach ensures that each solution is tailored to enhance efficiency, drive innovation, and support growth. From initial consultation to ongoing support, our team of experts is dedicated to providing exceptional service and cutting-edge technology. Here’s how we process and deliver our software services:</motion.div>
             </div>
             <div className='md:w-[50%]'>
               <motion.img
+              ref={ref17}
               initial={{scale:0,opacity:0}}
-              animate={{opacity:1,scale:1}}
+              animate={inView17 ? {opacity:1,scale:1} : {}}
               transition={{duration:1,delay:1,ease:'backInOut'}}
               src={services} alt="" />
             </div>
@@ -256,8 +299,9 @@ const Softwares = () => {
           {/* Services */}
           <div className=' grid grid-cols-1 md:grid-cols-2 place-items-center gap-10'>
             <motion.div
+            ref={ref18}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-            animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+            animate={inView18 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2, ease: "easeInOut" }}
             className=' mb-5 flex items-start justify-center gap-3'>
               <div className=' text-3xl text-[#ff8000]'>
@@ -271,8 +315,9 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref19}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-            animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+            animate={inView19 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2.2, ease: "easeInOut" }}
             className=' mb-5 flex items-start justify-center gap-3'>
               <div className=' text-3xl text-[#ff8000]'>
@@ -285,8 +330,9 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref20}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-            animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+            animate={inView20 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2.4, ease: "easeInOut" }}
             className=' mb-5 flex items-start justify-center gap-3'>
               <div className=' text-3xl text-[#ff8000]'>
@@ -301,8 +347,9 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref21}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-            animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+            animate={inView21 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2.6, ease: "easeInOut" }}
             className=' mb-5 flex items-start justify-center gap-3'>
             <div className=' text-3xl text-[#ff8000]'>
@@ -318,8 +365,9 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref22}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-            animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+            animate={inView22 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2.8, ease: "easeInOut" }}
             className=' mb-5 flex items-start justify-center gap-3'>
               <div className=' text-3xl text-[#ff8000]'>
@@ -335,8 +383,9 @@ const Softwares = () => {
             </motion.div>
 
             <motion.div
+            ref={ref23}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
-            animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }} 
+            animate={inView23 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 3, ease: "easeInOut" }}
             className=' mb-5 flex items-start justify-center gap-3'>
               <div className=' text-3xl text-[#ff8000]'>
