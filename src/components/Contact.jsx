@@ -16,7 +16,7 @@ const Contact = () => {
 
           <div className=' grid grid-cols-1 place-items-center gap-10 mb-10 md:grid-cols-2 lg:grid-cols-3'>
             {/* Contact Details-1 */}
-            <div className=' w-full h-[200px] shadow-[rgba(0,_0,_0,_0.2)_0px_3px_8px] rounded-xl p-10 flex justify-center items-start gap-5'>
+            <div className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
               <div>
                 <IoLocationSharp className=' text-3xl text-[#e87817]'/>
               </div>
@@ -27,7 +27,7 @@ const Contact = () => {
               </div>
             </div>
             {/* Contact Details-2 */}
-            <div className=' w-full h-[200px] shadow-[rgba(0,_0,_0,_0.2)_0px_3px_8px] rounded-xl p-10 flex justify-center items-start gap-5'>
+            <div className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
               <div>
                 <BiSolidPhoneCall className=' text-3xl text-[#e87817]'/>
               </div>
@@ -38,7 +38,7 @@ const Contact = () => {
               </div>
             </div>
             {/* Contact-Detail-3 */}
-            <div className=' w-full h-[200px] shadow-[rgba(0,_0,_0,_0.2)_0px_3px_8px] rounded-xl p-10 flex justify-center items-start gap-5'>
+            <div className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
               <div>
                 <FaThumbsUp className=' text-3xl text-[#e87817]'/>
               </div>

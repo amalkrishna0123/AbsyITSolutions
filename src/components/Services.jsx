@@ -22,7 +22,7 @@ const Services = () => {
       </div>
       {/* Animation */}
       <div className=' absolute -z-20 right-5 md:right-24 lg:right-52'>
-        <img className=' w-auto h-[50px]' src={animation1} alt="" />
+        <img className=' w-auto h-[50px] blink-software' src={animation1} alt="" />
       </div>
       <section className='section mt-10 mb-10 md:px-10 lg:max-w-[1200px] lg:mx-auto md:text-center z-50'>
         <div>
@@ -87,7 +87,7 @@ const Services = () => {
 
       <section className='section lg:max-w-[1200px] relative'>
         {/* Animation2 */}
-        <div className=' absolute -z-10 top-0'>
+        <div className=' absolute -z-10 top-0 blink-software'>
            <img className=' w-auto h-[80px]' src={animation2} alt="" />   
         </div>
         <div>
@@ -127,7 +127,7 @@ const Services = () => {
 
       <section className='section mb-10 lg:max-w-[1200px] relative'>
         {/* Animation3 */}
-        <div className=' absolute -z-10 right-5 top-0'>
+        <div className=' absolute -z-10 right-5 top-0 blink-software'>
             <img className=' w-auto h-[100px]' src={animation3} alt="" />
         </div>
         <div>

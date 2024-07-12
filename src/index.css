@@ -23,7 +23,63 @@ img {
 body{
   background-color: #ffffff;
 }
+.blink-animation{
+  transition: all 2s;
+  animation: linear 2s blinkimg infinite;
+}
+.blink-software{
+  transition: all 5s;
+  animation: linear 5s blinksoftware infinite;
+}
 
+@keyframes blinkimg {
+  50%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+}
+@keyframes blinksoftware{
+  0%{
+    transform: translateY(-30px);
+  }
+  50%{
+    transform: translateY(30px);
+  }
+  100%{
+    transform: translateY(-30px);
+  }
+}
+.Button{
+  transition: all .4s linear;
+}
+.Button:hover{
+  background-color: #686666;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.NavbarHover {
+  transition: all .2s linear;
+}
+.NavbarHover:hover{
+  color: #00f2ff;
+}
+.ScaleUpImg{
+  transition: all .2s linear;
+}
+.ScaleUpImg:hover{
+  transform:translateY(-10px);
+  transform: scaleY(10px);
+  filter: drop-shadow(2px 2px 2px #0000002e);
+}
+.BoxHover{
+  transition: all .2s linear;
+}
+.BoxHover:hover{
+  border: 4px ridge #e87817;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform:translateY(-10px);
+}
 /* #e87817 */
 /* #4d4a47 */
 /* #17171b */
