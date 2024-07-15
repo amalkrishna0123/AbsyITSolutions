@@ -23,7 +23,7 @@ import Line from "../assets/orange-lines.png"
 import { useNavigate } from "react-router-dom"
 import {motion} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
-
+import { Link } from 'react-router-dom'
 const Home = () => {
     const letterVariants = {
         hidden: { opacity: 0, y: 10 },  // Start hidden and slightly below
@@ -129,11 +129,11 @@ const Home = () => {
   return (
    <div>
     {/* Blur Bg */}
-    <div className='fixed blur-[30px] w-full h-full bg-[#065c5961] -z-50'>
+    <div className='fixed blur-[30px] w-full h-full bg-[#065c5961] md:hidden hidden -z-50'>
 
     </div>
      <section className='section lg:mt-20 mt-20'>
-       <div className=' absolute -z-10 opacity-30'>
+       <div className=' absolute -z-10 opacity-30 lg:hidden'>
         <img className=' mix-blend-multiply' src={Line} alt="" />
        </div>
         <div className=' lg:flex lg:max-w-[1200px] lg:mx-auto lg:gap-10 lg:items-center'>
@@ -163,7 +163,7 @@ const Home = () => {
                 initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
                 animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }}
                 transition={{ duration: 2, ease: "easeInOut" }}
-                className='text-sm pt-5 text-[#ffffff] lg:text-base'>
+                className='text-sm pt-5 text-[#6b6b6b] lg:text-base'>
                     Delivering state-of-the-art software and hardware solutions tailored to propel your business towards unparalleled growth and efficiency. From startups to global enterprises, we bridge the gap between innovation and success.
                 </motion.div>
                 <motion.div
@@ -200,7 +200,7 @@ const Home = () => {
             </div>
         </div>
         <div className={` mt-10 bg-[url(${circle})] mb-10`}>
-            <div className=' absolute -z-10 mix-blend-multiply opacity-20'>
+            <div className=' absolute -z-10 mix-blend-multiply opacity-20 md:hidden'>
                 <img className='blink-animation' src={circle} alt="" />
             </div>
             <div className=' max-w-[900px] w-full h-[350px] border bg-[#ffffff] rounded-3xl shadow-[inset_-12px_-8px_40px_#46464620] grid gap-5 px-3 py-5 items-center justify-center place-items-center grid-cols-2 lg:mx-auto lg:grid-cols-3'>
@@ -281,7 +281,7 @@ const Home = () => {
                     initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
                     animate={inView1 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
                     transition={{ duration: 2, ease: "easeInOut" }}
-                    className=' text-sm text-[#fff] lg:text-base mb-5 md:px-10'>
+                    className=' text-sm text-[#6b6b6b] lg:text-base mb-5 md:px-10'>
                         <LetterByLetterReveal text=""/>Our company specializes in delivering comprehensive software solutions across various industries.
                         From TASK'OS for financial management to Shade for hospital operations, VTASK for pharmacy efficiency,
                         DINE for restaurant management, STARSTAY for hotel administration, Magnet for school operations, Auric 
@@ -326,7 +326,7 @@ const Home = () => {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={inView1 ? { scale: 1, opacity: 1 } : {}}
                 transition={{ duration: 1.2, delay:1.2, ease:'backInOut' }}
-                className=' mt-5 px-3 py-2 bg-[#e87817] Button text-white font-medium rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' onClick={() => navigate('/about')}>Know More</motion.button>
+                className=' mt-5 px-6 py-2 bg-[#e87817] Button text-white font-medium rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><Link to="/about">Know More</Link></motion.button>
             </div>
             <div className=' lg:w-[60%]'>
                 <motion.img
@@ -352,8 +352,10 @@ const Home = () => {
         initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
         animate={inView3 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
         transition={{ duration: 2, ease: "easeInOut" }}
-        className=' text-center text-sm mb-10 lg:px-20 2lg:px-36 text-[#fff] md:text-base'>Absy Solutions provides advanced software tailored to elevate business performance. Our commitment to innovation,
+        className=' text-center text-sm mb-10 lg:px-20 2lg:px-36 text-[#6b6b6b] md:text-base'>Absy Solutions provides advanced software tailored to elevate business performance. Our commitment to innovation,
         quality development, and exceptional service drives our clients' success and sets us apart in the industry.</motion.div>
+
+        {/* Creative Services */}
         
         <div className=' grid  gap-10 place-items-center grid-cols-1 lg:grid-cols-2 justify-center items-center '>
             <motion.div
@@ -365,7 +367,7 @@ const Home = () => {
                 <div className=' w-[40%]'><img src={business} className=' w-[180px]' alt="" /></div>
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Business Softwares</div>
-                    <div className=' text-sm text-[#7a7a7a]'>
+                    <div className=' text-sm text-[#6b6b6b]'>
                     Absy Solutions offers intuitive business software designed to streamline operations and boost efficiency.
                     Our solutions simplify complex tasks, providing you with real-time insights and seamless management.
                     </div>
@@ -383,7 +385,7 @@ const Home = () => {
                 <div className=' w-[40%]'><img src={customdevelopment} className=' w-[180px]' alt="" /></div>
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Customized Software Development</div>
-                    <div className=' text-sm text-[#7a7a7a]'>
+                    <div className=' text-sm text-[#6b6b6b]'>
                     Absy Solutions creates bespoke software tailored to your unique business needs. 
                     Our custom development ensures a perfect fit, optimizing performance and driving growth for your organization.
                     </div>
@@ -398,7 +400,7 @@ const Home = () => {
                 <div className=' w-[40%]'><img src={hardware} className=' w-[180px]' alt="" /></div>
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Computer Hardware Sales & Services</div>
-                    <div className=' text-sm text-[#7a7a7a]'>
+                    <div className=' text-sm text-[#6b6b6b]'>
                     Absy Solutions provides top-notch computer hardware sales and services, ensuring reliable performance and support. 
                     We offer high-quality products and expert assistance to keep your systems running smoothly.
                     </div>
@@ -413,7 +415,7 @@ const Home = () => {
                 <div className=' w-[40%]'><img src={cctv} className=' w-[180px]' alt="" /></div>
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>CCTV & Security System</div>
-                    <div className=' text-sm text-[#7a7a7a]'>
+                    <div className=' text-sm text-[#6b6b6b]'>
                     Absy Solutions offers advanced CCTV and security systems to safeguard your premises. 
                     Our cutting-edge technology ensures comprehensive protection and peace of mind with reliable monitoring and support
                     </div>
@@ -429,7 +431,7 @@ const Home = () => {
                 <div className=' w-[40%]'><img src={intercom} className=' w-[180px]' alt="" /></div>
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Intercom & EPABX</div>
-                    <div className=' text-sm text-[#7a7a7a]'>
+                    <div className=' text-sm text-[#6b6b6b]'>
                     Absy Solutions provides efficient intercom and EPABX systems to streamline communication within your organization. 
                     Our solutions ensure clear, reliable connectivity and enhance internal collaboration
                     </div>
@@ -445,7 +447,7 @@ const Home = () => {
                 <div className=' w-[40%]'><img src={digital} className=' w-[180px]' alt="" /></div>
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Digital Marketing</div>
-                    <div className=' text-sm text-[#7a7a7a]'>
+                    <div className=' text-sm text-[#6b6b6b]'>
                     Absy Solutions offers intuitive business software designed to streamline operations and boost efficiency.
                     Our solutions simplify complex tasks, providing you with real-time insights and seamless management.
                     </div>
@@ -471,9 +473,9 @@ const Home = () => {
                     initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
                     animate={inView11 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
                     transition={{ duration: 2.6, ease: "easeInOut" }}
-                    className=' text-center text-sm mb-10 text-[#fff] md:text-base'>Reach out to Absy Solutions for all your inquiries and support. Our team is here to assist you and provide 
+                    className=' text-center text-sm mb-10 text-[#6b6b6b] md:text-base'>Reach out to Absy Solutions for all your inquiries and support. Our team is here to assist you and provide 
                     the information you need. Contact us today to start a conversation</motion.div>
-                    <div className=' hidden lg:flex mt-10 text-center justify-center'><button className=' px-4 py-2 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#e87817] text-white font-medium' onClick={() => navigate('/contact')}>Contact Us</button></div>
+                    <div className=' hidden lg:flex mt-10 text-center justify-center'><button className=' px-4 py-2 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#e87817] text-white font-medium'><Link to="/contact">Contact Us</Link></button></div>
                 </div>
                 <div className=''>
                         <motion.div
@@ -490,7 +492,7 @@ const Home = () => {
                         animate={inView13 ? {scale:1,opacity:1} : {}}
                         transition={{duration:1,delay:1,ease:'backInOut'}}
                         onClick={() => navigate('/about')}
-                        className=' mt-10 text-center lg:hidden '><button className=' px-4 py-2 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#e87817] text-white font-medium Button'>Contact Us</button></motion.div>
+                        className=' mt-10 text-center lg:hidden '><button className=' px-6 py-2 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#e87817] text-white font-medium Button'><Link to="/contact">Contact Us</Link></button></motion.div>
                 </div>
             </div>
        </div>

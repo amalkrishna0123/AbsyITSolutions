@@ -14,6 +14,9 @@ import bg3 from "../assets/bg3.png"
 import Line from "../assets/orange-lines.png"
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import banner2 from "../assets/company.jpg"
+import blue from "../assets/blue1.png"
+import bottompng from "../assets/bottompng.png"
 
 
 const About = () => {
@@ -52,10 +55,25 @@ const About = () => {
         <img className=' mix-blend-multiply opacity-30' src={bg3} alt="" />
       </div>
       {/* Bg */}
-      <div className=' -z-30 blur-[20px] absolute w-full h-[950px] md:h-[700px] lg:h-[600px] bg-[#606a1561]'>
+      <div className=' -z-30 blur-[20px] absolute w-full h-[950px] md:h-[700px] lg:h-[600px] hidden bg-[#606a1561]'>
 
       </div>
-      <section className='section md:px-10 mt-20'>
+      <div className='relative mt-20 w-full h-[500px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${banner2})`, backgroundPosition: 'bottom' }}>
+        <div className='w-full h-full'>
+          <img src={blue} className=' w-full h-full' alt="" />
+        </div>
+        <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
+          About Us
+          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56 '>
+          Absy Solutions delivers innovative software and hardware solutions tailored to modern business needs. Our expert team leverages cutting-edge technology to enhance efficiency and drive growth. We prioritize customer satisfaction and long-term partnerships, ensuring exceptional value and support.
+          </span>
+        </div>
+        <div className=' absolute z-10 bottom-0'>
+          <img src={bottompng} alt="" />
+        </div>
+      </div>
+
+      <section className='section md:px-10 mt-10 lg:mt-0'>
           <div className=' mb-10 lg:flex lg:justify-center max-w-[1200px] lg:mx-auto lg:items-center'>
             <div className=' lg:w-[60%]'>
               <div>
@@ -79,13 +97,13 @@ const About = () => {
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView3 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2, ease: "easeInOut" }}
-              className=' text-xl font-bold mb-5'>We are Focused on <span className=' block'>Exceptional Service and Innovation</span></motion.div>
+              className=' text-xl font-bold mb-5 text-[#291770]'>We are Focused on <span className=' block'>Exceptional Service and Innovation</span></motion.div>
               <motion.div
               ref={ref4}
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView4 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2.2, ease: "easeInOut" }}
-              className='mb-7'>Absy Solutions is a team of forward-thinking professionals dedicated to delivering cutting-edge software 
+              className='mb-7 text-[#6b6b6b]'>Absy Solutions is a team of forward-thinking professionals dedicated to delivering cutting-edge software 
               and hardware solutions. We leverage the latest technologies to address every aspect of modern business needs, 
               offering comprehensive solutions that drive innovation and efficiency across various industries.
               </motion.div>
@@ -123,7 +141,7 @@ const About = () => {
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView8 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' }: {}} 
               transition={{ duration: 2.8, ease: "easeInOut" }}
-              >
+              className='text-[#6b6b6b]'>
               At Absy Solutions, we specialize in providing advanced software and hardware solutions designed 
               to optimize business operations. Our offerings include versatile business software for financial management, 
               hospital administration, pharmacy operations, restaurant and hotel management, educational systems, and more. 
@@ -144,13 +162,13 @@ const About = () => {
             initial={{opacity:0}}
             animate={inView9 ? {opacity:1} : {}}
             transition={{duration:1,delay:1}}
-            className=' text-xl font-bold mb-5 md:text-center text-center'>Meet Our Team</motion.div>
+            className=' text-xl font-bold mb-5 md:text-center text-center text-[#291770]'>Meet Our Team</motion.div>
             <motion.div
             ref={ref10}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView10 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2, ease: "easeInOut" }}
-            className='mb-7 md:text-center md:px-10 lg:px-20 2lg:px-40 text-center'>our team is made up of passionate and experienced professionals committed to excellence. 
+            className='mb-7 md:text-center md:px-10 lg:px-20 2lg:px-40 text-center text-[#6b6b6b]'>our team is made up of passionate and experienced professionals committed to excellence. 
             We bring together a blend of skills and expertise to ensure top-quality solutions and exceptional results for our clients.</motion.div>
             {/* Team Members */}
             <div className=' grid grid-cols-1 place-items-center gap-10 md:grid-cols-2 max-w-[1200px] 2lg:grid-cols-3 lg:mx-auto'>

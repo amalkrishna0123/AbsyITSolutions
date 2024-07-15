@@ -5,6 +5,10 @@ import { FaThumbsUp } from "react-icons/fa";
 import Footer from './Footer';
 import { useInView } from 'react-intersection-observer';
 import { motion } from "framer-motion"
+import blue from "../assets/blue1.png"
+import bottompng from "../assets/bottompng.png"
+import banner2 from "../assets/company.jpg"
+import contact from "../assets/contact.jpg"
 
 const Contact = () => {
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
@@ -34,7 +38,21 @@ const Contact = () => {
 
   return (
     <div>
-      <section className=' section md:px-10 mt-24'>
+      <div className='relative mt-20 w-full h-[500px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${contact})`, backgroundPosition: 'bottom' }}>
+        <div className='w-full h-full'>
+          <img src={blue} className=' w-full h-full' alt="" />
+        </div>
+        <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
+          Contact Us
+          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56'>
+          Get in touch with Absy Solutions for any inquiries or support. Our team is ready to assist you with your needs. Reach out via phone, email, or visit us in person—let’s work together to achieve your business goals.
+          </span>
+        </div>
+        <div className=' absolute z-10 bottom-0'>
+          <img src={bottompng} alt="" />
+        </div>
+      </div>
+      <section className=' section md:px-10 mt-24 lg:mt-0'>
         <div>
           <div className='mb-10'>
             <motion.div
@@ -42,13 +60,13 @@ const Contact = () => {
             initial={{opacity:0}}
             animate={inView1 ? {opacity:1} : {}}
             transition={{duration:1,delay:1,ease:'backInOut'}}
-            className=' text-2xl font-bold mb-5 text-center'>Our Office</motion.div>
+            className=' text-2xl font-bold mb-5 text-center text-[#291770]'>Our Office</motion.div>
             <motion.div
             ref={ref2}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView2 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2, ease: "easeInOut" }}
-            className=' text-center md:px-10 lg:px-20 2lg:px-52'>Reach out to Absy Solutions for any inquiries or support. Our dedicated team is here to assist you. Visit our office, call us, or send an email to connect with us. We look forward to helping you achieve your business goals.</motion.div>
+            className=' text-center md:px-10 lg:px-20 2lg:px-52 text-[#6b6b6b]'>Reach out to Absy Solutions for any inquiries or support. Our dedicated team is here to assist you. Visit our office, call us, or send an email to connect with us. We look forward to helping you achieve your business goals.</motion.div>
           </div>
 
           <div className=' grid grid-cols-1 place-items-center gap-10 mb-10 md:grid-cols-2 lg:grid-cols-3'>
@@ -64,7 +82,7 @@ const Contact = () => {
               </div>
               <div>
                 <div className=' text-xl font-semibold mb-5'>Office Address</div>
-                <div><div>Ground Floor No. 57/19, 8th Cross,
+                <div className='text-[#6b6b6b]'><div>Ground Floor No. 57/19, 8th Cross,
                 Bharathi Layout, SG Palya, Bangalore - 560029</div></div>
               </div>
             </motion.div>
@@ -79,8 +97,8 @@ const Contact = () => {
               </div>
               <div>
                 <div className=' text-xl font-semibold mb-5'>Phone Number & Email</div>
-                <div><div>+91 7411071274, <span className=''>+91 9632718876,</span><span className='inline-block'>+91 9916245165, </span><span className=' inline-block'>+91 90363 47975</span></div></div>
-                <div className='mt-2'>absyitsolutions@gmail.com</div>
+                <div className='text-[#6b6b6b]'><div>+91 7411071274, <span className=''>+91 9632718876,</span><span className='inline-block'>+91 9916245165, </span><span className=' inline-block'>+91 90363 47975</span></div></div>
+                <div className='mt-2 text-[#6b6b6b]'>absyitsolutions@gmail.com</div>
               </div>
             </motion.div>
             {/* Contact-Detail-3 */}
@@ -94,7 +112,7 @@ const Contact = () => {
               </div>
               <div>
                 <div className=' text-xl font-semibold mb-5'>Social Media</div>
-                <div><div>Ground Floor No. 57/19, 8th Cross,
+                <div className='text-[#6b6b6b]'><div>Ground Floor No. 57/19, 8th Cross,
                 Bharathi Layout, SG Palya, Bangalore - 560029</div></div>
               </div>
             </motion.div>

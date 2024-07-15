@@ -81,7 +81,7 @@ body{
   transform:translateY(-10px);
 }
 .Clients-bg{
-  border: solid 2px #2F6C6D;
+  border: solid 2px #e87817;
   border-radius: 10px 40px;
   background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255,255,255,0));
   backdrop-filter: blur(10px);
@@ -89,7 +89,30 @@ body{
   border-radius: 10px 40px;
   padding: 20px;
 }
+.socialLinks{
+  transition: all .2s linear;
+}
+.socialLinks:hover{
+  color: white;
+  background: #e87817;
+}
+.companyhover{
+  transition: all .2s linear;
+}
+.companyhover:hover {
+  color: #00f2ff;
+}
+.NavbarHover{
+  /* Existing styles for NavbarHover */
+}
+
+.active-link {
+  color: #e87817; /* Active link color */
+  font-weight: bold; /* Optional: make the active link bold */
+}
+
 /* #e87817 */
 /* #4d4a47 */
 /* #17171b */
 /* #291770 */
+/* #6b6b6b */

@@ -29,7 +29,10 @@ import logo225 from "../assets/logo25.png"
 import Footer from './Footer'
 import { motion } from "framer-motion"
 import { useInView } from 'react-intersection-observer';
-
+import blue from "../assets/blue1.png"
+import bottompng from "../assets/bottompng.png"
+import banner2 from "../assets/company.jpg"
+import clients from "../assets/clients.jpg"
 
 
 
@@ -64,7 +67,21 @@ const Clients = () => {
 
   return (
     <div>
-      <section className='mt-28 section lg:max-w-[1200px] mx-auto '>
+      <div className='relative mt-20 w-full h-[500px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${clients})`, backgroundPosition: 'bottom' }}>
+        <div className='w-full h-full'>
+          <img src={blue} className=' w-full h-full' alt="" />
+        </div>
+        <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
+          Clients
+          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56'>
+          Our clients include a diverse range of industries, each benefiting from our tailored software and hardware solutions. We are proud to support their success with innovative, reliable, and effective technology solutions.
+          </span>
+        </div>
+        <div className=' absolute z-10 bottom-0'>
+          <img src={bottompng} alt="" />
+        </div>
+      </div>
+      <section className='mt-28 lg:mt-0 section lg:max-w-[1200px] mx-auto '>
         {/* <div className=' absolute -z-20 blur top-0 flex justify-center items-center mx-auto md:gap-10'>
           <img src={clientsbanner} alt="" />
         </div> */}
@@ -75,13 +92,13 @@ const Clients = () => {
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView1 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2.2, ease: "easeInOut" }}
-            className='text-center text-[42px] font-bold mb-5'>Our Clients</motion.div>
+            className='text-center text-[42px] font-bold mb-5 text-[#291770]'>Our Clients</motion.div>
             <motion.div
             ref={ref2}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView2 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2.2, ease: "easeInOut" }}
-            className=' text-center p-5 Clients-bg'>At Absy Solutions, we take pride in our diverse and esteemed client base. Our commitment to delivering top-notch software and hardware solutions has earned us the trust and loyalty of businesses across various industries. We are dedicated to fostering long-term partnerships and helping our clients achieve their goals with innovative and reliable solutions.</motion.div>
+            className=' text-center p-5 Clients-bg text-[#6b6b6b]'>At Absy Solutions, we take pride in our diverse and esteemed client base. Our commitment to delivering top-notch software and hardware solutions has earned us the trust and loyalty of businesses across various industries. We are dedicated to fostering long-term partnerships and helping our clients achieve their goals with innovative and reliable solutions.</motion.div>
           </div>
           <div>
             <motion.img
