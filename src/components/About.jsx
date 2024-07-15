@@ -47,7 +47,7 @@ const About = () => {
   return (
     <div className=' md:mt-16'>
       {/* Line */}
-      <div className=' absolute -z-20'>
+      <div className=' absolute -z-20 md:hidden'>
         <img src={Line} className=' mix-blend-multiply opacity-15' alt="" />
       </div>
       {/* Wave Line */}
