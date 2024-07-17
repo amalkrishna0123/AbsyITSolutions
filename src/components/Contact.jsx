@@ -9,6 +9,7 @@ import blue from "../assets/blue1.png"
 import bottompng from "../assets/bottompng.png"
 import banner2 from "../assets/company.jpg"
 import contact from "../assets/contact.jpg"
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
@@ -35,16 +36,23 @@ const Contact = () => {
   const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
   const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
   const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
+  const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
+  const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
+  const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
+  const { ref: ref28, inView: inView28 } = useInView({ triggerOnce: true });
+
+
+
 
   return (
     <div>
-      <div className='relative mt-20 w-full h-[500px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${contact})`, backgroundPosition: 'bottom' }}>
+      <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${contact})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
           <img src={blue} className=' w-full h-full' alt="" />
         </div>
         <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
           Contact Us
-          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56'>
+          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56 lg:max-w-[1200px] lg:mx-auto'>
           Get in touch with Absy Solutions for any inquiries or support. Our team is ready to assist you with your needs. Reach out via phone, email, or visit us in person—let’s work together to achieve your business goals.
           </span>
         </div>
@@ -52,7 +60,7 @@ const Contact = () => {
           <img src={bottompng} alt="" />
         </div>
       </div>
-      <section className=' section md:px-10 mt-24 lg:mt-0'>
+      <section className=' section md:px-10 mt-24 lg:mt-0 lg:max-w-[1400px]'>
         <div>
           <div className='mb-10'>
             <motion.div
@@ -60,13 +68,13 @@ const Contact = () => {
             initial={{opacity:0}}
             animate={inView1 ? {opacity:1} : {}}
             transition={{duration:1,delay:1,ease:'backInOut'}}
-            className=' text-2xl font-bold mb-5 text-center text-[#291770]'>Our Office</motion.div>
+            className=' text-2xl font-bold mb-5 text-center text-[#291770] lg:text-[42px]'>Our Office</motion.div>
             <motion.div
             ref={ref2}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView2 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2, ease: "easeInOut" }}
-            className=' text-center md:px-10 lg:px-20 2lg:px-52 text-[#6b6b6b]'>Reach out to Absy Solutions for any inquiries or support. Our dedicated team is here to assist you. Visit our office, call us, or send an email to connect with us. We look forward to helping you achieve your business goals.</motion.div>
+            className=' text-center md:px-10 lg:px-20 2lg:px-52 text-[#6b6b6b] lg:text-[18px]'>Reach out to Absy Solutions for any inquiries or support. Our dedicated team is here to assist you. Visit our office, call us, or send an email to connect with us. We look forward to helping you achieve your business goals.</motion.div>
           </div>
 
           <div className=' grid grid-cols-1 place-items-center gap-10 mb-10 md:grid-cols-2 lg:grid-cols-3'>
@@ -117,6 +125,37 @@ const Contact = () => {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      <section className='section md:px-10 lg:max-w-[1200px]'>
+        <div className='mb-10 md:flex md:justify-center md:items-center md:gap-10'>
+          {/* Left */}
+          <div className='flex flex-col justify-center items-center text-center mb-10'>
+            <motion.div
+            ref={ref25}
+            initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+            animate={inView25 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+            transition={{ duration: 2, ease: "easeInOut" }}
+            className='text-xl mb-2 text-[#e87817] font-bold'>- Get in Touch -</motion.div>
+            <motion.div
+            ref={ref26}
+            initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+            animate={inView26 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+            transition={{ duration: 2, ease: "easeInOut" }}
+            className='text-[42px] font-bold text-[#291770]'>Let's Get in Touch</motion.div>
+            <motion.div
+            ref={ref27}
+            initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+            animate={inView27 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+            transition={{ duration: 2, ease: "easeInOut" }}
+            className=' text-[#6b6b6b]'>Maximize your team's efficiency and reduce operating costs with our comprehensive solutions, designed to enhance your entire product.</motion.div>
+          </div>
+          {/* Right */}
+          <motion.div
+          className='flex justify-center items-center w-full lg:max-w-[1400px]'>
+            <ContactForm />
+          </motion.div>
         </div>
       </section>
 

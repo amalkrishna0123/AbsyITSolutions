@@ -49,13 +49,13 @@ const Softwares = () => {
   return (
     <div>
       <div className='fixed blur-[30px] w-full h-full hidden bg-[#b6db31a2] -z-50'></div>
-      <div className='relative mt-20 w-full h-[500px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${software})`, backgroundPosition: 'bottom' }}>
+      <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${software})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
           <img src={blue} className=' w-full h-full' alt="" />
         </div>
         <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
           Softwares
-          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56'>
+          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56 lg:max-w-[1200px] lg:mx-auto'>
             Our software solutions are designed to enhance business efficiency and innovation. We provide tailored, cutting-edge applications that address diverse operational needs, driving growth and success across various industries.
           </span>
         </div>
@@ -66,9 +66,9 @@ const Softwares = () => {
 
       {/* <div className=' w-[85%] md:w-[700px] h-[400px] md:h-[600px] bg-[#ffffffad] rounded-full absolute -z-10 translate-x-[-50%] md:translate-x-[-30%] blur-[30px]'>
       </div> */}
-      <section className='section mb-10 md:px-10 mt-10 lg:mt-0 lg:max-w-[1200px] z-20'>
+      <section className='section mb-10 md:px-10 mt-10 lg:mt-0 lg:max-w-[1200px] z-20 relative'>
         {/* animation1 */}
-        <div className=' absolute -z-10 right-5 lg:right-52 blink-software'>
+        <div className=' absolute -z-10 right-5 lg:right-10 blink-software'>
           <img className=' w-auto h-[70px]' src={animation1} alt="" />
         </div>
         <div>
@@ -212,8 +212,8 @@ const Softwares = () => {
         </div>
       </section>
 
-      <section className='section md:px-10 lg:max-w-[1200px] mb-16'>
-        <div className=' absolute -z-10 left-5 blink-software lg:left-52'>
+      <section className='section md:px-10 lg:max-w-[1200px] mb-16 relative'>
+        <div className=' absolute -z-10 left-5 blink-software lg:left-10'>
             <img className=' w-auto h-[70px]' src={animation3} alt="" />
           </div>
         <div className=''>
@@ -284,9 +284,9 @@ const Softwares = () => {
         </div>
       </section>
 
-      <section className=' section md:px-10 mb-10 lg:max-w-[1200px]'>
+      <section className=' section md:px-10 mb-10 lg:max-w-[1200px] relative'>
         {/* Animation2 */}
-      <div className=' absolute -z-10 right-5 lg:right-52'>
+      <div className=' absolute -z-10 right-5 lg:right-10'>
           <img className=' w-auto h-[100px] blink-software' src={animation2} alt="" />
         </div>
         <div>
@@ -297,7 +297,7 @@ const Softwares = () => {
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView15 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2 }}
-               className='font-bold text-2xl mb-5 lg:text-[42px] lg:mb-10 text-[#291770]'>Our Services & Processing</motion.div>
+               className='font-bold text-2xl mb-5 lg:text-[42px] lg:mb-5 text-[#291770] leading-[55px]'>Our Services & Processing</motion.div>
               <motion.div
               ref={ref16}
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 

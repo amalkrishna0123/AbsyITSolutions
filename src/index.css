@@ -20,6 +20,9 @@ img {
   padding: 0;
   box-sizing: border-box;
 }
+* {
+  box-sizing: border-box;
+}
 body{
   background-color: #ffffff;
 }
@@ -95,6 +98,9 @@ body{
 .socialLinks:hover{
   color: white;
   background: #e87817;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .companyhover{
   transition: all .2s linear;
@@ -110,7 +116,33 @@ body{
   color: #e87817; /* Active link color */
   font-weight: bold; /* Optional: make the active link bold */
 }
-
+.CenterPosition{
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+.homeBannerAnimation{
+  transition: all 3s linear;
+  animation: blinkAnimation3 3s infinite;
+}
+@keyframes blinkAnimation3{
+  0%{
+    transform: translateY(-15px);
+  }
+  50%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(-15px);
+  }
+}
+.inputOutline {
+  transition: all .2 linear;
+}
+.inputOutline:hover{
+  outline: #e87817;
+  border: 1px solid #e87817;
+}
 /* #e87817 */
 /* #4d4a47 */
 /* #17171b */

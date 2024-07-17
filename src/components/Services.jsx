@@ -53,13 +53,13 @@ const Services = () => {
       </div>
       
       
-      <div className='relative mt-20 w-full h-[500px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${networking1})`, backgroundPosition: 'bottom' }}>
+      <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${networking1})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
           <img src={blue} className=' w-full h-full' alt="" />
         </div>
         <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
           Services
-          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56'>
+          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56 lg:max-w-[1200px] lg:mx-auto'>
           We offer a wide range of services, including software development, hardware sales, security systems, and networking solutions. Our expert team is dedicated to delivering high-quality, customized services to meet your business needs and drive success.
           </span>
         </div>
@@ -79,7 +79,7 @@ const Services = () => {
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView1 ?  { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2, ease: "easeInOut" }}
-            className=' mb-5 text-2xl font-bold text-[#291770]'>Complete Hardware & Security Solutions</motion.div>
+            className=' mb-5 text-2xl font-bold text-[#291770] lg:text-[42px] leading-[45px]'>Complete Hardware & Security Solutions</motion.div>
             <motion.div
             ref={ref2}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
@@ -185,7 +185,7 @@ const Services = () => {
             initial={{opacity:0}}
             animate={inView8 ? {opacity:1} : {}}
             transition={{duration:1,delay:1.2,ease:'linear'}}
-            className='text-2xl font-bold mb-5 text-[#291770]'>Why Choose Us ?</motion.div>
+            className='text-2xl font-bold mb-5 text-[#291770] lg:text-[42px]'>Why Choose Us ?</motion.div>
             <motion.div
             ref={ref9}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
@@ -255,7 +255,7 @@ const Services = () => {
             initial={{opacity:0}}
             animate={inView14 ? {opacity:1} : {}}
             transition={{duration:1,delay:1.2,ease:'linear'}}
-            className=' text-2xl font-bold mb-5 text-[#291770]'>Our Services & Processing</motion.div>
+            className=' text-2xl font-bold mb-5 text-[#291770] lg:text-[42px]'>Our Services & Processing</motion.div>
             <motion.div
             ref={ref15}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 

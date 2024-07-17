@@ -24,6 +24,18 @@ import { useNavigate } from "react-router-dom"
 import {motion} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom'
+import homeBanner from "../assets/home-banner.png"
+import leaf1 from "../assets/leaf1.png"
+import leaf2 from "../assets/leaf2.png"
+import { IoHardwareChipSharp } from "react-icons/io5";
+import { IoPlanet } from "react-icons/io5";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import laptop from "../assets/laptop.png"
+import bannerContent from "../assets/banner-content.png"
+import blue from "../assets/blue1.png"
+import bottomImg from "../assets/bottompng.png"
+
+
 const Home = () => {
     const letterVariants = {
         hidden: { opacity: 0, y: 10 },  // Start hidden and slightly below
@@ -122,6 +134,15 @@ const Home = () => {
       const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
       const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
       const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
+      const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
+      const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
+      const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
+      const { ref: ref28, inView: inView28} = useInView({ triggerOnce: true });
+      const { ref: ref29, inView: inView29 } = useInView({ triggerOnce: true });
+      const { ref: ref30, inView: inView30 } = useInView({ triggerOnce: true });
+      const { ref: ref31, inView: inView31 } = useInView({ triggerOnce: true });
+      const { ref: ref32, inView: inView33 } = useInView({ triggerOnce: true });
+
 
       
 
@@ -132,7 +153,63 @@ const Home = () => {
     <div className='fixed blur-[30px] w-full h-full bg-[#065c5961] md:hidden hidden -z-50'>
 
     </div>
-     <section className='section lg:mt-20 mt-20'>
+    <section>
+        <div className=' relative'>
+            <div className=' h-[900px] w-full'>
+                <img src={homeBanner} className='h-full w-full object-cover' alt="" />
+                <img className=' absolute top-0 w-full h-full object-cover' src={blue} alt="" />
+                <img src={bottomImg} className=' absolute bottom-0' alt="" />
+            </div>
+            <div className=' flex justify-center items-center'>
+                <div className=' absolute top-[10%] lg:top-[15%]'>
+                   <div className=' md:flex md:justify-center md:items-center md:gap-10 lg:max-w-[1200px]'>
+                      {/* Left */}
+                    <div className=' flex justify-center items-center mb-5 md:w-[50%]'>
+                        <div className=''>
+                            <motion.div
+                            className=' relative flex justify-center homeBannerAnimation'>
+                                <motion.img
+                                ref={ref26}
+                                initial={{scale:0, opacity:0}}
+                                animate={inView26 ? {scale:1,opacity:1} : {}}
+                                transition={{duration:1,delay:1,ease:"backInOut"}}
+                                className=' drop-shadow-2xl mix-blend-multiply' src={bannerContent} alt="" />
+                            </motion.div>
+                        </div>
+                    </div>
+                    
+                    {/* Right */}
+                    <div className=' flex items-center justify-center md:w-[50%]'>
+                        <div className=' text-center'>
+                            <motion.div
+                            ref={ref23}
+                            initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
+                            animate={inView23 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {} } 
+                            transition={{ duration: 2, ease: "easeInOut" }}
+                            className=' text-[42px] font-bold leading-[40px] mb-5 text-[#ffffff]'>Lorem ipsum dolor sit amet consectetur</motion.div>
+                            <motion.div
+                            ref={ref24}
+                            initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
+                            animate={ inView24 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+                            transition={{ duration: 2, ease: "easeInOut" }}
+                            className=' text-[#aba0a0] mb-10'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae animi quo eveniet hic odit ullam modi dolore temporibus, qui repellat accusantium minus nobis nemo id sunt laudantium alias mollitia laboriosam?</motion.div>
+                            <motion.div
+                            ref={ref25}
+                            initial={{ opacity:0, scale:0}}
+                            animate={inView25 ? {opacity:1,scale:1} : {}}
+                            transition={{duration:1,delay:1.1,ease:'backInOut'}}
+                            >
+                                <button className=' bg-white font-bold px-6 py-2 rounded-md cursor-pointer shadow-lg' onClick={() => document.getElementById('homesection').scrollIntoView({ behavior: 'smooth' })}>Know More</button>
+                            </motion.div>
+                        </div>
+                        
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section className='section lg:mt-20 mt-20' id='homesection'>
        <div className=' absolute -z-10 opacity-30 lg:hidden'>
         <img className=' mix-blend-multiply' src={Line} alt="" />
        </div>
@@ -143,32 +220,38 @@ const Home = () => {
             // transition={{ duration: 2, ease: "easeInOut" }}
             className=' mt-10 text-center background lg:w-[60%]'>
                 <motion.div 
+                ref={ref27}
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                animate={inView27 ? { opacity: 1 } : {}}
                 transition={{ duration: 1, delay: 0.5 }}
                 className=' text-lg font-medium text-[#e87817]'>- Welcome to Absy Solutions -</motion.div>
-                <motion.div initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
+                <motion.div 
+                    ref={ref28}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={inView28 ? { opacity: 1, y: 0 } : {}}
                     transition={{ 
                     duration: 1, 
                     ease: 'easeOut', 
                     delay: 0.3 }}  className=' pt-5 text-[40px] leading-[47px] font-bold text-[#291770]'>
                     Driving Business Forward with <motion.span 
+                    ref={ref32}
                     initial={{ opacity: 0, y: 50 }} 
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={inView23 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1.5 }} 
                     className=' block'>Advanced Tech Solutions</motion.span>
                 </motion.div>
                 <motion.div
+                ref={ref29}
                 initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
-                animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }}
+                animate={ inView29 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {} }
                 transition={{ duration: 2, ease: "easeInOut" }}
                 className='text-sm pt-5 text-[#6b6b6b] lg:text-base'>
                     Delivering state-of-the-art software and hardware solutions tailored to propel your business towards unparalleled growth and efficiency. From startups to global enterprises, we bridge the gap between innovation and success.
                 </motion.div>
                 <motion.div
+                ref={ref30}
                 initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                animate={inView30 ? { scale: 1, opacity: 1 } : {}}
                 transition={{ duration: 1.2, delay:1.2, ease:'backInOut' }}
                 className=' mt-10 mb-10 md:mt-10'>
                     <button className=' Button bg-[#e87817] px-6 py-2 rounded-md text-white font-medium shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' onClick={() => document.getElementById('about_us').scrollIntoView({ behavior: 'smooth' })}>Discover More</button>
@@ -190,10 +273,11 @@ const Home = () => {
             </motion.div>
             <div className='lg:w-[60%]'>
                 <motion.img
+                ref={ref31}
                 src={frame1}
                 alt="Decorative Frame"
                 initial="hidden"
-                animate="visible"
+                animate={inView31 ? "visible" : "hidden" }
                 variants={slideInZoomVariants}
                 className='drop-shadow-xl lg:w-auto lg:h-[400px]'
                 />
@@ -203,7 +287,7 @@ const Home = () => {
             <div className=' absolute -z-10 mix-blend-multiply opacity-20 md:hidden'>
                 <img className='blink-animation' src={circle} alt="" />
             </div>
-            <div className=' max-w-[900px] w-full h-[350px] border bg-[#ffffff] rounded-3xl shadow-[inset_-12px_-8px_40px_#46464620] grid gap-5 px-3 py-5 items-center justify-center place-items-center grid-cols-2 lg:mx-auto lg:grid-cols-3'>
+            <div className=' max-w-[900px] w-full h-[350px] border bg-[#ffffff] rounded-3xl shadow-[inset_-12px_-8px_40px_#46464620] grid px-3 py-5 items-center justify-center place-items-center grid-cols-2 lg:mx-auto lg:grid-cols-4'>
                 <motion.div
                 ref={ref15}
                 initial={{y:-50,opacity:0}}

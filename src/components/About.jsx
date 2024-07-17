@@ -58,13 +58,13 @@ const About = () => {
       <div className=' -z-30 blur-[20px] absolute w-full h-[950px] md:h-[700px] lg:h-[600px] hidden bg-[#606a1561]'>
 
       </div>
-      <div className='relative mt-20 w-full h-[500px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${banner2})`, backgroundPosition: 'bottom' }}>
+      <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${banner2})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
           <img src={blue} className=' w-full h-full' alt="" />
         </div>
         <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
           About Us
-          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56 '>
+          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56 lg:max-w-[1200px] lg:mx-auto'>
           Absy Solutions delivers innovative software and hardware solutions tailored to modern business needs. Our expert team leverages cutting-edge technology to enhance efficiency and drive growth. We prioritize customer satisfaction and long-term partnerships, ensuring exceptional value and support.
           </span>
         </div>
@@ -91,13 +91,13 @@ const About = () => {
               initial={{opacity:0}}
               animate={inView2 ? {opacity:1} : {}}
               transition={{duration:1,delay:1}}
-              className=' text-[#e87817] font-semibold mb-7'>- About Absy IT Solutions -</motion.div>
+              className=' text-[#e87817] mb-7 lg:text-[18px] font-bold'>- About Absy IT Solutions -</motion.div>
               <motion.div
               ref={ref3}
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView3 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2, ease: "easeInOut" }}
-              className=' text-xl font-bold mb-5 text-[#291770]'>We are Focused on <span className=' block'>Exceptional Service and Innovation</span></motion.div>
+              className=' text-xl leading-[42px] lg:text-[42px] font-bold mb-5 text-[#291770]'>We are Focused on <span className=' block'>Exceptional Service and Innovation</span></motion.div>
               <motion.div
               ref={ref4}
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
@@ -155,14 +155,14 @@ const About = () => {
       </div>
       </section>
 
-      <section className='section md:px-10'>
+      <section className='section md:px-10 lg:mt-10'>
         <div>
             <motion.div
             ref={ref9}
             initial={{opacity:0}}
             animate={inView9 ? {opacity:1} : {}}
             transition={{duration:1,delay:1}}
-            className=' text-xl font-bold mb-5 md:text-center text-center text-[#291770]'>Meet Our Team</motion.div>
+            className=' text-xl font-bold mb-5 md:text-center text-center text-[#291770] lg:text-[42px]'>Meet Our Team</motion.div>
             <motion.div
             ref={ref10}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 

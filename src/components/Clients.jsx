@@ -67,13 +67,13 @@ const Clients = () => {
 
   return (
     <div>
-      <div className='relative mt-20 w-full h-[500px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${clients})`, backgroundPosition: 'bottom' }}>
+      <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${clients})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
           <img src={blue} className=' w-full h-full' alt="" />
         </div>
         <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
           Clients
-          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56'>
+          <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56 lg:max-w-[1200px] lg:mx-auto'>
           Our clients include a diverse range of industries, each benefiting from our tailored software and hardware solutions. We are proud to support their success with innovative, reliable, and effective technology solutions.
           </span>
         </div>
