@@ -158,7 +158,7 @@ const Home = () => {
         <div className=' relative'>
             <div className=' h-[900px] w-full'>
                 <img src={homebanner} className='h-full w-full object-cover' alt="" />
-                <video className=' absolute top-0 mix-blend-multiply' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: 'auto' }}></video>
+                <video className=' absolute top-0 mix-blend-multiply' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
                 <img className=' absolute top-0 w-full h-full object-cover' src={blue} alt="" />
                 <img src={bottomImg} className=' absolute bottom-0' alt="" />
             </div>
