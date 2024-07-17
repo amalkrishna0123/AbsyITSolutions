@@ -33,7 +33,7 @@ const Navbar = () => {
                         <img className='h-full w-full mix-blend-multiply' src={logo} alt="Logo" />
                     </div>
                     <div>
-                        <ul className='hidden md:flex items-center gap-5 text-[#64646e]'>
+                        <ul className='hidden md:flex items-center gap-5 text-[#878787]'>
                             <li className={getLinkClassName("/")}><Link to="/">Home</Link></li>
                             <li className={getLinkClassName("/about")}><Link to="/about">About</Link></li>
                             <li className={getLinkClassName("/softwares")}><Link to="/softwares">Softwares</Link></li>

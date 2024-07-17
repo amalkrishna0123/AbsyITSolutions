@@ -24,7 +24,7 @@ import { useNavigate } from "react-router-dom"
 import {motion} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom'
-import homeBanner from "../assets/home-banner.png"
+import homeBanner from "../assets/intro.mp4"
 import leaf1 from "../assets/leaf1.png"
 import leaf2 from "../assets/leaf2.png"
 import { IoHardwareChipSharp } from "react-icons/io5";
@@ -34,6 +34,7 @@ import laptop from "../assets/laptop.png"
 import bannerContent from "../assets/banner-content.png"
 import blue from "../assets/blue1.png"
 import bottomImg from "../assets/bottompng.png"
+import homebanner from "../assets/HomeBanner.png"
 
 
 const Home = () => {
@@ -156,7 +157,8 @@ const Home = () => {
     <section>
         <div className=' relative'>
             <div className=' h-[900px] w-full'>
-                <img src={homeBanner} className='h-full w-full object-cover' alt="" />
+                <img src={homebanner} className='h-full w-full object-cover' alt="" />
+                <video className=' absolute top-0 mix-blend-multiply' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: 'auto' }}></video>
                 <img className=' absolute top-0 w-full h-full object-cover' src={blue} alt="" />
                 <img src={bottomImg} className=' absolute bottom-0' alt="" />
             </div>
@@ -199,7 +201,7 @@ const Home = () => {
                             animate={inView25 ? {opacity:1,scale:1} : {}}
                             transition={{duration:1,delay:1.1,ease:'backInOut'}}
                             >
-                                <button className=' bg-white font-bold px-6 py-2 rounded-md cursor-pointer shadow-lg' onClick={() => document.getElementById('homesection').scrollIntoView({ behavior: 'smooth' })}>Know More</button>
+                                <button className=' bg-white font-bold px-6 py-2 rounded-md cursor-pointer shadow-lg text-[#291770]' onClick={() => document.getElementById('homesection').scrollIntoView({ behavior: 'smooth' })}>Know More</button>
                             </motion.div>
                         </div>
                         
@@ -224,7 +226,7 @@ const Home = () => {
                 initial={{ opacity: 0 }}
                 animate={inView27 ? { opacity: 1 } : {}}
                 transition={{ duration: 1, delay: 0.5 }}
-                className=' text-lg font-medium text-[#e87817]'>- Welcome to Absy Solutions -</motion.div>
+                className=' text-lg font-medium text-[#e87817]'>- Absy IT Solutions -</motion.div>
                 <motion.div 
                     ref={ref28}
                     initial={{ opacity: 0, y: 50 }}
@@ -539,6 +541,20 @@ const Home = () => {
             </motion.div>
 
         </div>
+        </div>
+    </section>
+
+    <section className=' mt-20 section mb-10 md:px-10 lg:max-w-[1200px]'>
+        <div className=' flex justify-center items-center'>
+            <div>
+                <div className=' text-center text-xl font-semibold lg:font-bold  lg:mb-5 mb-2 text-[#e87817]'>- Our Partners -</div>
+                <div className=' text-center lg:text-[42px] text-3xl font-bold text-[#291770]'>People Who Trust Us</div>
+                <div className=''>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 

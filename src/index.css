@@ -65,7 +65,8 @@ body{
   transition: all .2s linear;
 }
 .NavbarHover:hover{
-  color: #00f2ff;
+  color: #15006b;
+
 }
 .ScaleUpImg{
   transition: all .2s linear;
