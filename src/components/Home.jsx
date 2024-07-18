@@ -207,15 +207,15 @@ const Home = () => {
     <section className=' mt-20 lg:mt-28'>
         <div className=' relative'>
             <div className=' h-[550px] lg:h-[1200px] w-full'>
-                <Slider {...settings} className=' mix-blend-multiply'>
+                <Slider {...settings} className=' mix-blend-multiply h-[550px] lg:h-[1200px] w-full overflow-hidden'>
                     <div>
                         <img id='homeImage' src={homebanner} className='h-full w-full object-cover mix-blend-multiply' alt="Home Banner" />
                     </div>
                     <div>
-                        <img id='homeImage' src={content2} className='h-full w-full object-cover mix-blend-multiply' alt="Additional Image 1" />
+                        <img  src={content2} className='h-full w-full object-cover mix-blend-multiply' alt="Additional Image 1" />
                     </div>
                     <div>
-                        <img id='homeImage' src={content3} className='h-full w-full object-cover mix-blend-multiply' alt="Additional Image 2" />
+                        <img src={content3} className='h-full w-full object-cover mix-blend-multiply' alt="Additional Image 2" />
                     </div>
                 </Slider>
                 {/* <img id='homeImage' src={homebanner} className='h-full w-full object-cover z-10 mix-blend-multiply' alt="" /> */}

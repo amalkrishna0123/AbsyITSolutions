@@ -33,7 +33,6 @@ const Navbar = () => {
                         <img className='h-full w-full mix-blend-multiply' src={logo} alt="Logo" />
                     </div>
                     <div>
-                        <a className=' hidden lg:block' href="https://absyitsolutions@gmail.com"><div className='mb-2 font-semibold text-[#1230a9]'>absyitsolutions@gmail.com</div></a>
                         <ul className='hidden md:flex items-center gap-5 text-[#878787]'>
                             <li className={getLinkClassName("/")}><Link to="/">Home</Link></li>
                             <li className={getLinkClassName("/about")}><Link to="/about">About</Link></li>
@@ -43,6 +42,9 @@ const Navbar = () => {
                             <li className={getLinkClassName("/contact")}><Link to="/contact">Contact</Link></li>
                         </ul>
                         
+                    </div>
+                    <div>
+                        <a className=' hidden lg:block' href="https://absyitsolutions@gmail.com"><div className='mb-2 font-semibold text-[#1230a9]'>absyitsolutions@gmail.com</div></a>
                     </div>
                     <div className='cursor-pointer text-[#e87817] md:hidden'>
                         <RiMenu3Line onClick={() => setMenuOpen(true)} className='text-3xl'/>
