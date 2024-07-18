@@ -29,10 +29,11 @@ const Navbar = () => {
                 {menuOpen && <MobileNav setMenuOpen={setMenuOpen} />}
                 <nav className='pt-3 flex items-center justify-between mx-5 lg:max-w-[1200px] lg:mx-auto'>
                     {/* Logo */}
-                    <div className='w-[100px] h-auto cursor-pointer'>
+                    <div className='w-[100px] lg:w-[150px] h-auto cursor-pointer'>
                         <img className='h-full w-full mix-blend-multiply' src={logo} alt="Logo" />
                     </div>
                     <div>
+                        <a className=' hidden lg:block' href="https://absyitsolutions@gmail.com"><div className='mb-2 font-semibold text-[#1230a9]'>absyitsolutions@gmail.com</div></a>
                         <ul className='hidden md:flex items-center gap-5 text-[#878787]'>
                             <li className={getLinkClassName("/")}><Link to="/">Home</Link></li>
                             <li className={getLinkClassName("/about")}><Link to="/about">About</Link></li>
@@ -41,6 +42,7 @@ const Navbar = () => {
                             <li className={getLinkClassName("/clients")}><Link to="/clients">Clients</Link></li>
                             <li className={getLinkClassName("/contact")}><Link to="/contact">Contact</Link></li>
                         </ul>
+                        
                     </div>
                     <div className='cursor-pointer text-[#e87817] md:hidden'>
                         <RiMenu3Line onClick={() => setMenuOpen(true)} className='text-3xl'/>

@@ -33,6 +33,12 @@ import { useState, useEffect } from 'react'
 import LogoSlider from './LogoSlider'
 import content from "../assets/content.png"
 import useMediaQuery from './useMediaQuery'
+import content2 from "../assets/content2.jpg"
+import content3 from "../assets/content3.jpg"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick'
+
 
 
 const Home = () => {
@@ -180,7 +186,16 @@ const Home = () => {
 
 
 
-      
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        fade: true
+      };
 
 
   return (
@@ -189,12 +204,23 @@ const Home = () => {
     <div className='fixed blur-[30px] w-full h-full bg-[#065c5961] md:hidden hidden -z-50'>
 
     </div>
-    <section className=' mt-20'>
+    <section className=' mt-20 lg:mt-28'>
         <div className=' relative'>
             <div className=' h-[550px] lg:h-[1200px] w-full'>
-                <img id='homeImage' src={homebanner} className='h-full w-full object-cover z-10 mix-blend-multiply' alt="" />
-                <video id='homeVideo' className=' absolute top-0 -z-10 opacity-80' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
-                <img className=' absolute top-0 w-full h-full object-cover opacity-50 lg:hidden' src={blue} alt="" />
+                <Slider {...settings} className=' mix-blend-multiply'>
+                    <div>
+                        <img id='homeImage' src={homebanner} className='h-full w-full object-cover mix-blend-multiply' alt="Home Banner" />
+                    </div>
+                    <div>
+                        <img id='homeImage' src={content2} className='h-full w-full object-cover mix-blend-multiply' alt="Additional Image 1" />
+                    </div>
+                    <div>
+                        <img id='homeImage' src={content3} className='h-full w-full object-cover mix-blend-multiply' alt="Additional Image 2" />
+                    </div>
+                </Slider>
+                {/* <img id='homeImage' src={homebanner} className='h-full w-full object-cover z-10 mix-blend-multiply' alt="" /> */}
+                <video id='homeVideo' className=' absolute top-0 -z-10 opacity-80 mix-blend-multiply' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
+                <img className=' absolute top-0 w-full h-full object-cover opacity-50 lg:hidden mix-blend-multiply' src={blue} alt="" />
                 <img src={bottomImg} className=' absolute bottom-0' alt="" />
             </div>
             <div className=' flex justify-center items-center'>
