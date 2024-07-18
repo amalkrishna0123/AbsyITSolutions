@@ -185,20 +185,20 @@ const Home = () => {
     <div className='fixed blur-[30px] w-full h-full bg-[#065c5961] md:hidden hidden -z-50'>
 
     </div>
-    <section>
+    <section className=' mt-20'>
         <div className=' relative'>
-            <div className=' h-[1050px] lg:h-[900px] w-full'>
-                <img id='homeImage' src={homebanner} className='h-full w-full object-cover' alt="" />
-                <video id='homeVideo' className=' absolute top-0 mix-blend-multiply' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
-                <img className=' absolute top-0 w-full h-full object-cover' src={blue} alt="" />
+            <div className=' h-[550px] lg:h-[1200px] w-full'>
+                <img id='homeImage' src={homebanner} className='h-full w-full object-cover z-10 mix-blend-multiply' alt="" />
+                <video id='homeVideo' className=' absolute top-0 -z-10 opacity-80' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
+                <img className=' absolute top-0 w-full h-full object-cover opacity-50' src={blue} alt="" />
                 <img src={bottomImg} className=' absolute bottom-0' alt="" />
             </div>
             <div className=' flex justify-center items-center'>
                 <div className=' absolute top-[10%] lg:top-[15%]'>
-                   <div className=' md:flex md:justify-center md:items-center md:gap-10 lg:max-w-[1200px]'>
+                   <div className=' md:justify-center md:items-center md:gap-10 lg:max-w-[1200px]'>
                       {/* Left */}
                     <div className=' flex justify-center items-center lg:mb-5 mb-3 md:w-[50%]'>
-                        <div className=''>
+                        {/* <div className=''>
                             <motion.div
                             className=' relative flex justify-center homeBannerAnimation'>
                                 <motion.img
@@ -208,29 +208,29 @@ const Home = () => {
                                 transition={{duration:1,delay:1,ease:"backInOut"}}
                                 className=' drop-shadow-2xl mix-blend-multiply' src={content} alt="" />
                             </motion.div>
-                        </div>
+                        </div> */}
                     </div>
                     
                     {/* Right */}
-                    <div className=' flex items-center justify-center md:w-[50%]'>
+                    <div className=' flex items-center justify-center'>
                         <div className=' text-center'>
                             <motion.div
                             ref={ref23}
                             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
                             animate={inView23 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {} } 
                             transition={{ duration: 2, ease: "easeInOut" }}
-                            className=' lg:text-[52px] text-[42px] font-bold leading-[55px] lg:mb-5 mb-3 text-[#ffffff]'>Integrating Advanced Tech for Strategic Growth</motion.div>
+                            className=' lg:text-[102px] text-[42px] font-bold leading-snug lg:mb-5 mb-3 text-[#ffffff]'>Integrating Advanced Tech for Strategic Growth</motion.div>
                             <motion.div
                             ref={ref24}
                             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
                             animate={ inView24 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
-                            transition={{ duration: 2, ease: "easeInOut" }}
-                            className=' text-[#aba0a0] mb-10'>Absy IT Solutions specialize in integrating advanced tech solutions that propel businesses forward strategically. Our innovative approach ensures operational efficiency and scalable growth, tailored to meet the unique needs of modern enterprises.</motion.div>
+                            transition={{ delay:1.1, duration: 2, ease: "easeInOut" }}
+                            className=' text-[#aba0a0] mb-10 md:text-[18px]'>Absy IT Solutions specialize in integrating advanced tech solutions that propel businesses forward strategically. Our innovative approach ensures operational efficiency and scalable growth, tailored to meet the unique needs of modern enterprises.</motion.div>
                             <motion.div
                             ref={ref25}
                             initial={{ opacity:0, scale:0}}
                             animate={inView25 ? {opacity:1,scale:1} : {}}
-                            transition={{duration:1,delay:1.1,ease:'backInOut'}}
+                            transition={{duration:1,delay:2,ease:'backInOut'}}
                             >
                                 <button className=' bg-white font-bold px-6 py-2 rounded-md cursor-pointer shadow-lg text-[#291770]' onClick={() => document.getElementById('homesection').scrollIntoView({ behavior: 'smooth' })}>Know More</button>
                             </motion.div>
@@ -242,7 +242,7 @@ const Home = () => {
             </div>
         </div>
     </section>
-     <section className='section lg:mt-20 mt-20' id='homesection'>
+     <section className='section lg:mt-20 mt-0' id='homesection'>
        <div className=' absolute -z-10 opacity-30 lg:hidden'>
         <img className=' mix-blend-multiply' src={Line} alt="" />
        </div>

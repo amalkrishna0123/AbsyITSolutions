@@ -193,6 +193,32 @@ body{
 }
 
 
+
+
+
+/* LogoSlider.css */
+.logo-slider-container {
+  width: 100%; /* Full width of the container */
+  overflow: hidden; /* Hide the overflowing logos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-slider {
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+}
+
+.logo {
+  width: 150px; /* Adjust as per your design */
+  height: 80px; /* Maintain aspect ratio */
+  object-fit: contain;
+  /* margin-right: 20px; */
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
 /* #e87817 */
 /* #4d4a47 */
 /* #17171b */
