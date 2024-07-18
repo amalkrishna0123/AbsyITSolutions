@@ -25,19 +25,21 @@ import {motion} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom'
 import homeBanner from "../assets/intro.mp4"
-import leaf1 from "../assets/leaf1.png"
-import leaf2 from "../assets/leaf2.png"
-import { IoHardwareChipSharp } from "react-icons/io5";
-import { IoPlanet } from "react-icons/io5";
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
-import laptop from "../assets/laptop.png"
 import bannerContent from "../assets/banner-content.png"
 import blue from "../assets/blue1.png"
 import bottomImg from "../assets/bottompng.png"
 import homebanner from "../assets/HomeBanner.png"
+import { useState, useEffect } from 'react'
+import LogoSlider from './LogoSlider'
+import content from "../assets/content.png"
 
 
 const Home = () => {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     const letterVariants = {
         hidden: { opacity: 0, y: 10 },  // Start hidden and slightly below
         visible: { opacity: 1, y: 0 }   // End visible and at the original position
@@ -144,6 +146,35 @@ const Home = () => {
       const { ref: ref31, inView: inView31 } = useInView({ triggerOnce: true });
       const { ref: ref32, inView: inView33 } = useInView({ triggerOnce: true });
 
+      const [imageLoaded, setImageLoaded] = useState(false);
+    const [videoLoaded, setVideoLoaded] = useState(false);
+
+    useEffect(() => {
+        const handleImageLoad = () => setImageLoaded(true);
+        const handleVideoLoad = () => setVideoLoaded(true);
+
+        const imgElement = document.getElementById('homeImage');
+        const videoElement = document.getElementById('homeVideo');
+
+        if (imgElement.complete) {
+            handleImageLoad();
+        } else {
+            imgElement.addEventListener('load', handleImageLoad);
+        }
+
+        if (videoElement.readyState >= 3) {
+            handleVideoLoad();
+        } else {
+            videoElement.addEventListener('loadeddata', handleVideoLoad);
+        }
+
+        return () => {
+            imgElement.removeEventListener('load', handleImageLoad);
+            videoElement.removeEventListener('loadeddata', handleVideoLoad);
+        };
+    }, []);
+
+
 
       
 
@@ -156,9 +187,9 @@ const Home = () => {
     </div>
     <section>
         <div className=' relative'>
-            <div className=' h-[900px] w-full'>
-                <img src={homebanner} className='h-full w-full object-cover' alt="" />
-                <video className=' absolute top-0 mix-blend-multiply' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
+            <div className=' h-[1050px] lg:h-[900px] w-full'>
+                <img id='homeImage' src={homebanner} className='h-full w-full object-cover' alt="" />
+                <video id='homeVideo' className=' absolute top-0 mix-blend-multiply' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
                 <img className=' absolute top-0 w-full h-full object-cover' src={blue} alt="" />
                 <img src={bottomImg} className=' absolute bottom-0' alt="" />
             </div>
@@ -166,7 +197,7 @@ const Home = () => {
                 <div className=' absolute top-[10%] lg:top-[15%]'>
                    <div className=' md:flex md:justify-center md:items-center md:gap-10 lg:max-w-[1200px]'>
                       {/* Left */}
-                    <div className=' flex justify-center items-center mb-5 md:w-[50%]'>
+                    <div className=' flex justify-center items-center lg:mb-5 mb-3 md:w-[50%]'>
                         <div className=''>
                             <motion.div
                             className=' relative flex justify-center homeBannerAnimation'>
@@ -175,7 +206,7 @@ const Home = () => {
                                 initial={{scale:0, opacity:0}}
                                 animate={inView26 ? {scale:1,opacity:1} : {}}
                                 transition={{duration:1,delay:1,ease:"backInOut"}}
-                                className=' drop-shadow-2xl mix-blend-multiply' src={bannerContent} alt="" />
+                                className=' drop-shadow-2xl mix-blend-multiply' src={content} alt="" />
                             </motion.div>
                         </div>
                     </div>
@@ -188,13 +219,13 @@ const Home = () => {
                             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
                             animate={inView23 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {} } 
                             transition={{ duration: 2, ease: "easeInOut" }}
-                            className=' text-[42px] font-bold leading-[40px] mb-5 text-[#ffffff]'>Lorem ipsum dolor sit amet consectetur</motion.div>
+                            className=' lg:text-[52px] text-[42px] font-bold leading-[55px] lg:mb-5 mb-3 text-[#ffffff]'>Integrating Advanced Tech for Strategic Growth</motion.div>
                             <motion.div
                             ref={ref24}
                             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
                             animate={ inView24 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
                             transition={{ duration: 2, ease: "easeInOut" }}
-                            className=' text-[#aba0a0] mb-10'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae animi quo eveniet hic odit ullam modi dolore temporibus, qui repellat accusantium minus nobis nemo id sunt laudantium alias mollitia laboriosam?</motion.div>
+                            className=' text-[#aba0a0] mb-10'>Absy IT Solutions specialize in integrating advanced tech solutions that propel businesses forward strategically. Our innovative approach ensures operational efficiency and scalable growth, tailored to meet the unique needs of modern enterprises.</motion.div>
                             <motion.div
                             ref={ref25}
                             initial={{ opacity:0, scale:0}}
@@ -544,19 +575,18 @@ const Home = () => {
         </div>
     </section>
 
-    <section className=' mt-20 section mb-10 md:px-10 lg:max-w-[1200px]'>
-        <div className=' flex justify-center items-center'>
+    <section className='mt-20 section mb-10 md:px-10 lg:max-w-[1200px]'>
+        <div className='flex justify-center items-center'>
             <div>
-                <div className=' text-center text-xl font-semibold lg:font-bold  lg:mb-5 mb-2 text-[#e87817]'>- Our Partners -</div>
-                <div className=' text-center lg:text-[42px] text-3xl font-bold text-[#291770]'>People Who Trust Us</div>
-                <div className=''>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
+            <div className='text-center text-xl font-semibold lg:font-bold lg:mb-5 mb-2 text-[#e87817]'>- Our Partners -</div>
+            <div className='text-center lg:text-[42px] text-3xl font-bold text-[#291770]'>People Who Trust Us</div>
+            <div className='mt-10 lg:mt-16 overflow-hidden'>
+                <LogoSlider />
+            </div>
             </div>
         </div>
     </section>
+
 
     <section className=' section md:px-10'>
        <div className=''>

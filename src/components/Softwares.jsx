@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import task from "../assets/task.png"
 import shade from "../assets/shade.png"
 import vtask from "../assets/vtask.png"
@@ -22,6 +22,11 @@ import software from "../assets/software1.jpg"
 
 
 const Softwares = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });

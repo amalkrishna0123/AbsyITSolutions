@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import clientimg from "../assets/clients.png"
 import clientsbanner from "../assets/clients-banner.png"
 import logo1 from "../assets/Mb logo.png"
@@ -37,6 +37,11 @@ import clients from "../assets/clients.jpg"
 
 
 const Clients = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });

@@ -1,4 +1,4 @@
-import React from 'react'
+import Reac,{useEffect} from 'react'
 import { IoLocationSharp } from "react-icons/io5";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { FaThumbsUp } from "react-icons/fa";
@@ -12,6 +12,11 @@ import contact from "../assets/contact.jpg"
 import ContactForm from './ContactForm';
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });

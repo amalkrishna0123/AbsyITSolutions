@@ -8,6 +8,15 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  scroll-behavior: smooth;
+}
+section{
+  scroll-behavior: smooth;
+}
+div{
+  scroll-behavior: smooth;
+}
 .section{
   @apply container mx-auto py-2 
 }
@@ -107,7 +116,7 @@ body{
   transition: all .2s linear;
 }
 .companyhover:hover {
-  color: #00f2ff;
+  color: #291770;
 }
 .NavbarHover{
   /* Existing styles for NavbarHover */
@@ -144,6 +153,46 @@ body{
   outline: #e87817;
   border: 1px solid #e87817;
 }
+/* Logo-slider */
+.logo-slider-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 100px;
+}
+
+.logo-slider {
+  display: flex;
+  width: max-content; /* Adjust to fit the content */
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-item {
+  flex-shrink: 0;
+  width: 200px;
+  height: 80px;
+  background-color: black;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
 /* #e87817 */
 /* #4d4a47 */
 /* #17171b */

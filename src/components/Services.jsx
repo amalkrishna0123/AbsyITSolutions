@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import cctv from "../assets/cctv-security.png"
 import networking from "../assets/networking.png"
 import intercom from "../assets/intercom.png"
@@ -20,6 +20,12 @@ import networking1 from "../assets/networking1.jpg"
 
 
 const Services = () => {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });

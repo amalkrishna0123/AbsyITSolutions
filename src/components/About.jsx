@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Navbar from './Navbar'
 import about from "../assets/about.png"
 import { TiTick } from "react-icons/ti";
@@ -14,12 +14,17 @@ import bg3 from "../assets/bg3.png"
 import Line from "../assets/orange-lines.png"
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import banner2 from "../assets/company.jpg"
+import banner2 from "../assets/about2.jpg"
 import blue from "../assets/blue1.png"
 import bottompng from "../assets/bottompng.png"
 
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
@@ -58,7 +63,7 @@ const About = () => {
       <div className=' -z-30 blur-[20px] absolute w-full h-[950px] md:h-[700px] lg:h-[600px] hidden bg-[#606a1561]'>
 
       </div>
-      <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${banner2})`, backgroundPosition: 'bottom' }}>
+      <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${banner2})`, backgroundPosition: 'top' }}>
         <div className='w-full h-full'>
           <img src={blue} className=' w-full h-full' alt="" />
         </div>
