@@ -229,7 +229,7 @@ const Softwares = () => {
             initial={{y:-100, opacity:0}}
             animate={inView11 ? {y:0, opacity:1} : {}}
             transition={{duration:1,delay:1, ease:'backInOut'}}
-            className='ScaleUpImg w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
+            className='ScaleUpImg1 w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
               <div className=''>
                 <div className=' mb-5 font-semibold text-xl '>Customizable Solutions</div>
                 <div className='text-[#6b6b6b]'>Our software is designed to be tailored to your specific business challenges, ensuring that it addresses 
@@ -244,7 +244,7 @@ const Softwares = () => {
             initial={{y:-100, opacity:0}}
             animate={inView12 ? {y:0, opacity:1} : {}}
             transition={{duration:1.2,delay:1.2, ease:'backInOut'}}
-            className='ScaleUpImg w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
+            className='ScaleUpImg1 w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
               <div className=''>
                 <div className=' mb-5 font-semibold text-xl'>Advanced Features</div>
                 <div className='text-[#6b6b6b]'>We incorporate the latest technology and innovative functionalities into our software to enhance 
@@ -259,7 +259,7 @@ const Softwares = () => {
             initial={{y:-100, opacity:0}}
             animate={inView13 ? {y:0, opacity:1} : {}}
             transition={{duration:1.4,delay:1.4, ease:'backInOut'}}
-            className='ScaleUpImg w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
+            className='ScaleUpImg1 w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
               <div className=''>
                 <div className=' mb-5 font-semibold text-xl'>Dedicated Support</div>
                 <div className='text-[#6b6b6b]'>Our team of experts provides ongoing, proactive support to address any issues promptly and ensure 
@@ -275,7 +275,7 @@ const Softwares = () => {
             initial={{y:-100, opacity:0}}
             animate={inView14 ? {y:0, opacity:1} : {}}
             transition={{duration:1.8,delay:1.8, ease:'backInOut'}}
-            className='ScaleUpImg w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
+            className='ScaleUpImg1 w-full h-[250px] shadow-[inset_-12px_-8px_40px_#46464620] rounded-2xl p-5'>
               <div className=''>
                 <div className=' mb-5 font-semibold text-xl'>Scalable Options</div>
                 <div className='text-[#6b6b6b]'>Our software solutions are built to scale with your business, offering flexibility and adaptability 

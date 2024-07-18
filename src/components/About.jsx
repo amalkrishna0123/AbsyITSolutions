@@ -216,7 +216,7 @@ const About = () => {
               <motion.div
               ref={ref14}
               initial={{y:-100, opacity:0}}
-              animate={inView4 ? {y:0, opacity:1} : {}}
+              animate={inView14 ? {y:0, opacity:1} : {}}
               transition={{duration:1,delay:1, ease:'backInOut'}}
               className='ScaleUpImg w-full h-[400px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
                   <div className='w-full h-[330px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team4} alt="" /></div>

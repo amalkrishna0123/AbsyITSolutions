@@ -266,7 +266,7 @@ const Services = () => {
             ref={ref15}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView15 ?  { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
-            transition={{ duration: 2, ease: "easeInOut" }}
+            transition={{ duration: 1,delay:1, ease: "easeInOut" }}
             className='md:px-52 text-[#6b6b6b]'>At Absy Solutions, we deliver comprehensive software services that cater to the diverse needs of modern businesses. Our robust process ensures that every solution is designed, developed, and implemented with precision and excellence. From initial consultation to ongoing support, we are committed to providing software that drives efficiency, innovation, and growth.</motion.div>
           </div>
           <div className=' grid grid-cols-1 gap-10 md:grid-cols-2'>
@@ -274,7 +274,7 @@ const Services = () => {
             ref={ref16}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView16 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:1,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={initial} alt="" />
@@ -290,7 +290,7 @@ const Services = () => {
             ref={ref17}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView17 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:1.2,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={designsolution} alt="" />
@@ -306,7 +306,7 @@ const Services = () => {
             ref={ref18}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView18 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:1,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={productselection} alt="" />
@@ -322,7 +322,7 @@ const Services = () => {
             ref={ref19}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView19 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:1.2,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={installsetup} alt="" />
@@ -338,7 +338,7 @@ const Services = () => {
             ref={ref20}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView20 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:1,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 p-5 w-full h-[330px] md:h-[300px] rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border'>
                 <div className='w-[30%]'>
                   <img src={initial} alt="" />
@@ -355,7 +355,7 @@ const Services = () => {
             ref={ref21}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView21 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:1.2,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={ongoing} alt="" />

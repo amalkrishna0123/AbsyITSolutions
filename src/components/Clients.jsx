@@ -105,13 +105,14 @@ const Clients = () => {
             transition={{ duration: 2.2, ease: "easeInOut" }}
             className=' text-center p-5 Clients-bg text-[#6b6b6b]'>At Absy Solutions, we take pride in our diverse and esteemed client base. Our commitment to delivering top-notch software and hardware solutions has earned us the trust and loyalty of businesses across various industries. We are dedicated to fostering long-term partnerships and helping our clients achieve their goals with innovative and reliable solutions.</motion.div>
           </div>
-          <div>
+          <div >
             <motion.img
             ref={ref3}
             initial={{scale:0,opacity:0,x:-100}}
             animate={inView3 ? {scale:1,opacity:1,x:0} : {}}
             transition={{duration:1,delay:2,ease:'backInOut'}}
-            src={clientimg} alt="" />
+            src={clientimg}
+            alt="" />
           </div>
         </div>
         <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10'>
@@ -120,15 +121,15 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView4 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
-            <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo1} alt="" />
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
+            <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply ' src={logo1} alt="" />
           </motion.div>
           <motion.div
           ref={ref5}
           initial={{y:-50,opacity:0}}
           animate={inView5 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo2} alt="" />
           </motion.div>
           <motion.div
@@ -136,7 +137,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView6 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo3} alt="" />
           </motion.div>
           <motion.div
@@ -144,7 +145,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView7 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo4} alt="" />
           </motion.div>
           <motion.div
@@ -152,7 +153,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView8 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain' src={logo5} alt="" />
           </motion.div>
           <motion.div
@@ -160,7 +161,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView9 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo6} alt="" />
           </motion.div>
           <motion.div
@@ -168,7 +169,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView10 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo7} alt="" />
           </motion.div>
           <motion.div
@@ -176,7 +177,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView11 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo8} alt="" />
           </motion.div>
           <motion.div
@@ -184,7 +185,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView12 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo9} alt="" />
           </motion.div>
           <motion.div
@@ -192,7 +193,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView13 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo10} alt="" />
           </motion.div>
           <motion.div
@@ -200,7 +201,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView14 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo11} alt="" />
           </motion.div>
           <motion.div
@@ -208,7 +209,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView15 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo12} alt="" />
           </motion.div>
           <motion.div
@@ -216,7 +217,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView16 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo13} alt="" />
           </motion.div>
           <motion.div
@@ -224,7 +225,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView17 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo14} alt="" />
           </motion.div>
           <motion.div
@@ -232,7 +233,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView18 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo15} alt="" />
           </motion.div>
           <motion.div
@@ -240,7 +241,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView19 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain' src={logo16} alt="" />
           </motion.div>
           <motion.div
@@ -248,7 +249,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView20 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo17} alt="" />
           </motion.div>
           <motion.div
@@ -256,7 +257,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView21 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo18} alt="" />
           </motion.div>
           <motion.div
@@ -264,7 +265,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView22 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain mix-blend-multiply' src={logo19} alt="" />
           </motion.div>
           <motion.div
@@ -272,7 +273,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView23 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-contain' src={logo20} alt="" />
           </motion.div>
           <motion.div
@@ -280,7 +281,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView24 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo21} alt="" />
           </motion.div>
           <motion.div
@@ -288,7 +289,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView25 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border' src={logo22} alt="" />
           </motion.div>
           <motion.div
@@ -296,7 +297,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView26 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo23} alt="" />
           </motion.div>
           <motion.div
@@ -304,7 +305,7 @@ const Clients = () => {
           initial={{y:-50,opacity:0}}
           animate={inView27 ? {y:0,opacity:1} : {}}
           transition={{duration:1,delay:1,ease:'backInOut'}}
-          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff]'>
+          className=' w-[60%] h-[250px] rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-[#ffffff] ScaleUpImg'>
             <img className=' rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border w-full h-full object-cover' src={logo24} alt="" />
           </motion.div>
         </div>

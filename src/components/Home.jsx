@@ -32,6 +32,7 @@ import homebanner from "../assets/HomeBanner.png"
 import { useState, useEffect } from 'react'
 import LogoSlider from './LogoSlider'
 import content from "../assets/content.png"
+import useMediaQuery from './useMediaQuery'
 
 
 const Home = () => {
@@ -113,6 +114,9 @@ const Home = () => {
         }
       };
 
+
+      const isMobile = useMediaQuery('(max-width: 768px)');
+
       const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
       const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
       const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
@@ -190,7 +194,7 @@ const Home = () => {
             <div className=' h-[550px] lg:h-[1200px] w-full'>
                 <img id='homeImage' src={homebanner} className='h-full w-full object-cover z-10 mix-blend-multiply' alt="" />
                 <video id='homeVideo' className=' absolute top-0 -z-10 opacity-80' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
-                <img className=' absolute top-0 w-full h-full object-cover opacity-50' src={blue} alt="" />
+                <img className=' absolute top-0 w-full h-full object-cover opacity-50 lg:hidden' src={blue} alt="" />
                 <img src={bottomImg} className=' absolute bottom-0' alt="" />
             </div>
             <div className=' flex justify-center items-center'>
@@ -219,20 +223,24 @@ const Home = () => {
                             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
                             animate={inView23 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {} } 
                             transition={{ duration: 2, ease: "easeInOut" }}
-                            className=' lg:text-[102px] text-[42px] font-bold leading-snug lg:mb-5 mb-3 text-[#ffffff]'>Integrating Advanced Tech for Strategic Growth</motion.div>
+                            className=' lg:text-[102px] text-[42px] font-bold leading-tight lg:mb-5 mb-3 text-[#ffffff]'>Integrating Advanced Tech for Strategic Growth</motion.div>
                             <motion.div
                             ref={ref24}
                             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
                             animate={ inView24 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
                             transition={{ delay:1.1, duration: 2, ease: "easeInOut" }}
-                            className=' text-[#aba0a0] mb-10 md:text-[18px]'>Absy IT Solutions specialize in integrating advanced tech solutions that propel businesses forward strategically. Our innovative approach ensures operational efficiency and scalable growth, tailored to meet the unique needs of modern enterprises.</motion.div>
+                            className=' text-[#aba0a0] mb-10 md:text-[18px] lg:max-w-[1200px]'>Absy IT Solutions specialize in integrating advanced tech solutions that propel businesses forward strategically. Our innovative approach ensures operational efficiency and scalable growth, tailored to meet the unique needs of modern enterprises.</motion.div>
                             <motion.div
                             ref={ref25}
-                            initial={{ opacity:0, scale:0}}
-                            animate={inView25 ? {opacity:1,scale:1} : {}}
-                            transition={{duration:1,delay:2,ease:'backInOut'}}
+                            initial={{ opacity: 0, scale: 0 }}
+                            animate={inView25 ? { opacity: 1, scale: 1 } : {}}
+                            transition={{
+                                duration: 1,
+                                delay: isMobile ? 2 : .1, // Set delay based on screen size
+                                ease: 'backInOut'
+                            }}
                             >
-                                <button className=' bg-white font-bold px-6 py-2 rounded-md cursor-pointer shadow-lg text-[#291770]' onClick={() => document.getElementById('homesection').scrollIntoView({ behavior: 'smooth' })}>Know More</button>
+                                <button className=' HomeButton bg-white font-bold px-6 py-2 rounded-md cursor-pointer shadow-lg text-[#291770]' onClick={() => document.getElementById('homesection').scrollIntoView({ behavior: 'smooth' })}>Know More</button>
                             </motion.div>
                         </div>
                         
@@ -602,10 +610,15 @@ const Home = () => {
                     ref={ref11}
                     initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
                     animate={inView11 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
-                    transition={{ duration: 2.6, ease: "easeInOut" }}
+                    transition={{ duration: 2.6, delay:1, ease: "easeInOut" }}
                     className=' text-center text-sm mb-10 text-[#6b6b6b] md:text-base'>Reach out to Absy Solutions for all your inquiries and support. Our team is here to assist you and provide 
                     the information you need. Contact us today to start a conversation</motion.div>
-                    <div className=' hidden lg:flex mt-10 text-center justify-center'><button className=' px-4 py-2 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#e87817] text-white font-medium'><Link to="/contact">Contact Us</Link></button></div>
+                    <motion.div
+                    ref={ref26}
+                    initial={{scale:0, opacity:0}}
+                    animate={inView26 ? {scale:1, opacity:1} : {}}
+                    transition={{duration:1,delay:1.2,ease:'backInOut'}}
+                    className=' hidden lg:flex mt-10 text-center justify-center'><button className=' px-4 py-2 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#e87817] text-white font-medium'><Link to="/contact">Contact Us</Link></button></motion.div>
                 </div>
                 <div className=''>
                         <motion.div

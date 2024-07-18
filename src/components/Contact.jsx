@@ -44,7 +44,6 @@ const Contact = () => {
   const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
   const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
   const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
-  const { ref: ref28, inView: inView28 } = useInView({ triggerOnce: true });
 
 
 
@@ -104,6 +103,7 @@ const Contact = () => {
             ref={ref4}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView4 ? {y:0, opacity:1,scale:1} : {}}
+            transition={{duration:1,delay:1.1,ease:'circInOut'}}
             className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
               <div>
                 <BiSolidPhoneCall className=' text-3xl text-[#e87817]'/>
@@ -119,6 +119,7 @@ const Contact = () => {
             ref={ref5}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView5 ? {y:0, opacity:1,scale:1} : {}}
+            transition={{duration:1,delay:1.2,ease:'circInOut'}}
             className=' w-full h-[200px] shadow-[inset_-12px_-8px_40px_#46464620] border rounded-xl p-10 flex justify-center items-start gap-5'>
               <div>
                 <FaThumbsUp className=' text-3xl text-[#e87817]'/>

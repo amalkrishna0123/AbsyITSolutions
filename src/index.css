@@ -85,6 +85,16 @@ body{
   transform: scaleY(10px);
   filter: drop-shadow(2px 2px 2px #0000002e);
 }
+
+.ScaleUpImg1 {
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+  transform-origin: center;
+
+}
+
+.ScaleUpImg1:hover {
+  transform: translateY(-10px) scale(1.05);
+}
 .BoxHover{
   transition: all .2s linear;
 }
@@ -218,7 +228,13 @@ body{
   /* margin-right: 20px; */
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 }
-
+.HomeButton {
+  transition: all .2s linear;
+}
+.HomeButton:hover{
+  background: #291770;
+  color: white;
+}
 /* #e87817 */
 /* #4d4a47 */
 /* #17171b */
