@@ -200,29 +200,25 @@ const Home = () => {
 
   return (
    <div>
-    {/* Blur Bg */}
-    <div className='fixed blur-[30px] w-full h-full bg-[#065c5961] md:hidden hidden -z-50'>
-
-    </div>
-    <section className=' mt-20 lg:mt-28'>
-        <div className=' relative'>
-            <div className=' h-[550px] lg:h-[1200px] w-full'>
-                <Slider {...settings} className=' mix-blend-multiply h-[550px] lg:h-[1200px] w-full overflow-hidden'>
-                    <div>
-                        <img id='homeImage' src={homebanner} className='h-full w-full object-cover mix-blend-multiply' alt="Home Banner" />
+    <section className=' mt-20 lg:mt-28 relative h-[550px] lg:h-full'>
+        <div className=' h-full w-full'>
+            
+                <Slider {...settings} className=' mix-blend-multiply h-full w-full overflow-hidden'>
+                    <div className=' h-[550px] w-full lg:h-[1200px]'>
+                        <img id='homeImage' src={homebanner} className='w-full h-full object-cover mix-blend-multiply' alt="Home Banner" />
                     </div>
-                    <div>
-                        <img  src={content2} className='h-full w-full object-cover mix-blend-multiply' alt="Additional Image 1" />
+                    <div className=' h-[550px] w-full lg:h-[1200px]'>
+                        <img  src={content2} className='w-full h-full object-cover mix-blend-multiply' alt="Additional Image 1" />
                     </div>
-                    <div>
-                        <img src={content3} className='h-full w-full object-cover mix-blend-multiply' alt="Additional Image 2" />
+                    <div className='h-[550px] w-full lg:h-[1200px]'>
+                        <img src={content3} className='w-full h-full object-cover mix-blend-multiply' alt="Additional Image 2" />
                     </div>
                 </Slider>
                 {/* <img id='homeImage' src={homebanner} className='h-full w-full object-cover z-10 mix-blend-multiply' alt="" /> */}
                 <video id='homeVideo' className=' absolute top-0 -z-10 opacity-80 mix-blend-multiply' autoPlay loop muted playsInline src={homeBanner} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
                 <img className=' absolute top-0 w-full h-full object-cover opacity-50 lg:hidden mix-blend-multiply' src={blue} alt="" />
                 <img src={bottomImg} className=' absolute bottom-0' alt="" />
-            </div>
+            
             <div className=' flex justify-center items-center'>
                 <div className=' absolute top-[10%] lg:top-[15%]'>
                    <div className=' md:justify-center md:items-center md:gap-10 lg:max-w-[1200px]'>
