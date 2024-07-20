@@ -88,7 +88,7 @@ const Softwares = () => {
           initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
           animate={inView2 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
           transition={{ duration: 2.5, ease: "easeInOut" }}
-           className=' lg:pr-52 text-[#6b6b6b]'>At Absy Solutions, our transformative software solutions are crafted to drive business success. 
+           className=' lg:pr-52 text-[#6b6b6b]'>At Absy IT Solutions, our transformative software solutions are crafted to drive business success. 
           We offer innovative, tailored software that enhances efficiency and supports growth, seamlessly integrating into 
           your operations for optimal performance
           </motion.div>
@@ -308,7 +308,7 @@ const Softwares = () => {
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView16 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2.4, ease: "easeInOut" }}
-              className=' mb-10 text-[#6b6b6b]'>At Absy Solutions, we pride ourselves on delivering top-notch software services that cater to a wide range of business needs. Our comprehensive approach ensures that each solution is tailored to enhance efficiency, drive innovation, and support growth. From initial consultation to ongoing support, our team of experts is dedicated to providing exceptional service and cutting-edge technology. Here’s how we process and deliver our software services:</motion.div>
+              className=' mb-10 text-[#6b6b6b]'>At Absy IT Solutions, we pride ourselves on delivering top-notch software services that cater to a wide range of business needs. Our comprehensive approach ensures that each solution is tailored to enhance efficiency, drive innovation, and support growth. From initial consultation to ongoing support, our team of experts is dedicated to providing exceptional service and cutting-edge technology. Here’s how we process and deliver our software services:</motion.div>
             </div>
             <div className='md:w-[50%]'>
               <motion.img

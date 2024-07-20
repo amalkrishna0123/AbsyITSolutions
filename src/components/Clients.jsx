@@ -103,7 +103,7 @@ const Clients = () => {
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView2 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2.2, ease: "easeInOut" }}
-            className=' text-center p-5 Clients-bg text-[#6b6b6b]'>At Absy Solutions, we take pride in our diverse and esteemed client base. Our commitment to delivering top-notch software and hardware solutions has earned us the trust and loyalty of businesses across various industries. We are dedicated to fostering long-term partnerships and helping our clients achieve their goals with innovative and reliable solutions.</motion.div>
+            className=' text-center p-5 Clients-bg text-[#6b6b6b]'>At Absy IT Solutions, we take pride in our diverse and esteemed client base. Our commitment to delivering top-notch software and hardware solutions has earned us the trust and loyalty of businesses across various industries. We are dedicated to fostering long-term partnerships and helping our clients achieve their goals with innovative and reliable solutions.</motion.div>
           </div>
           <div >
             <motion.img

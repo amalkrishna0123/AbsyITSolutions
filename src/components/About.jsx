@@ -70,7 +70,7 @@ const About = () => {
         <div className='absolute z-10 text-[52px] font-bold text-[#ffa200] text-center md:top-32'>
           About Us
           <span className='block text-sm text-center text-[#ffffff] md:px-20 lg:text-[16px] lg:px-56 lg:max-w-[1200px] lg:mx-auto'>
-          Absy Solutions delivers innovative software and hardware solutions tailored to modern business needs. Our expert team leverages cutting-edge technology to enhance efficiency and drive growth. We prioritize customer satisfaction and long-term partnerships, ensuring exceptional value and support.
+          Absy IT Solutions delivers innovative software and hardware solutions tailored to modern business needs. Our expert team leverages cutting-edge technology to enhance efficiency and drive growth. We prioritize customer satisfaction and long-term partnerships, ensuring exceptional value and support.
           </span>
         </div>
         <div className=' absolute z-10 bottom-0'>
@@ -108,7 +108,7 @@ const About = () => {
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView4 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2.2, ease: "easeInOut" }}
-              className='mb-7 text-[#6b6b6b]'>Absy Solutions is a team of forward-thinking professionals dedicated to delivering cutting-edge software 
+              className='mb-7 text-[#6b6b6b]'>Absy IT Solutions is a team of forward-thinking professionals dedicated to delivering cutting-edge software 
               and hardware solutions. We leverage the latest technologies to address every aspect of modern business needs, 
               offering comprehensive solutions that drive innovation and efficiency across various industries.
               </motion.div>
@@ -147,7 +147,7 @@ const About = () => {
               animate={inView8 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' }: {}} 
               transition={{ duration: 2.8, ease: "easeInOut" }}
               className='text-[#6b6b6b]'>
-              At Absy Solutions, we specialize in providing advanced software and hardware solutions designed 
+              At Absy IT Solutions, we specialize in providing advanced software and hardware solutions designed 
               to optimize business operations. Our offerings include versatile business software for financial management, 
               hospital administration, pharmacy operations, restaurant and hotel management, educational systems, and more. 
               We combine innovative technology with tailored features to enhance efficiency, streamline processes, 

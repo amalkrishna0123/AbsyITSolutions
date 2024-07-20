@@ -499,7 +499,7 @@ const Home = () => {
         initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
         animate={inView3 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
         transition={{ duration: 2, ease: "easeInOut" }}
-        className=' text-center text-sm mb-10 lg:px-20 2lg:px-36 text-[#6b6b6b] md:text-base'>Absy Solutions provides advanced software tailored to elevate business performance. Our commitment to innovation,
+        className=' text-center text-sm mb-10 lg:px-20 2lg:px-36 text-[#6b6b6b] md:text-base'>Absy IT Solutions provides advanced software tailored to elevate business performance. Our commitment to innovation,
         quality development, and exceptional service drives our clients' success and sets us apart in the industry.</motion.div>
 
         {/* Creative Services */}
@@ -515,7 +515,7 @@ const Home = () => {
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Business Softwares</div>
                     <div className=' text-sm text-[#6b6b6b]'>
-                    Absy Solutions offers intuitive business software designed to streamline operations and boost efficiency.
+                    Absy IT Solutions offers intuitive business software designed to streamline operations and boost efficiency.
                     Our solutions simplify complex tasks, providing you with real-time insights and seamless management.
                     </div>
                 </div>
@@ -533,7 +533,7 @@ const Home = () => {
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Customized Software Development</div>
                     <div className=' text-sm text-[#6b6b6b]'>
-                    Absy Solutions creates bespoke software tailored to your unique business needs. 
+                    Absy IT Solutions creates bespoke software tailored to your unique business needs. 
                     Our custom development ensures a perfect fit, optimizing performance and driving growth for your organization.
                     </div>
                 </div>
@@ -548,7 +548,7 @@ const Home = () => {
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Computer Hardware Sales & Services</div>
                     <div className=' text-sm text-[#6b6b6b]'>
-                    Absy Solutions provides top-notch computer hardware sales and services, ensuring reliable performance and support. 
+                    Absy IT Solutions provides top-notch computer hardware sales and services, ensuring reliable performance and support. 
                     We offer high-quality products and expert assistance to keep your systems running smoothly.
                     </div>
                 </div>
@@ -563,7 +563,7 @@ const Home = () => {
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>CCTV & Security System</div>
                     <div className=' text-sm text-[#6b6b6b]'>
-                    Absy Solutions offers advanced CCTV and security systems to safeguard your premises. 
+                    Absy IT Solutions offers advanced CCTV and security systems to safeguard your premises. 
                     Our cutting-edge technology ensures comprehensive protection and peace of mind with reliable monitoring and support
                     </div>
                 </div>
@@ -579,7 +579,7 @@ const Home = () => {
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Intercom & EPABX</div>
                     <div className=' text-sm text-[#6b6b6b]'>
-                    Absy Solutions provides efficient intercom and EPABX systems to streamline communication within your organization. 
+                    Absy IT Solutions provides efficient intercom and EPABX systems to streamline communication within your organization. 
                     Our solutions ensure clear, reliable connectivity and enhance internal collaboration
                     </div>
                 </div>
@@ -595,7 +595,7 @@ const Home = () => {
                 <div className=' w-[50%]'>
                     <div className=' font-semibold text-lg mb-3 md:mb-5'>Digital Marketing</div>
                     <div className=' text-sm text-[#6b6b6b]'>
-                    Absy Solutions offers intuitive business software designed to streamline operations and boost efficiency.
+                    Absy IT Solutions offers intuitive business software designed to streamline operations and boost efficiency.
                     Our solutions simplify complex tasks, providing you with real-time insights and seamless management.
                     </div>
                 </div>

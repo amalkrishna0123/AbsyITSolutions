@@ -112,7 +112,7 @@ const Services = () => {
             transition={{duration:1.5,delay:1,ease:'circInOut'}}
             className='lg:w-[50%] border rounded-3xl p-10 shadow-lg'>
               <div className=' text-xl font-semibold mb-5'>CCTV & Security Systems</div>
-              <div className='text-[#6b6b6b]'>Absy Solutions delivers cutting-edge CCTV and security systems to safeguard your property. Our solutions offer 
+              <div className='text-[#6b6b6b]'>Absy IT Solutions delivers cutting-edge CCTV and security systems to safeguard your property. Our solutions offer 
               reliable surveillance and comprehensive protection, ensuring peace of mind with advanced monitoring technology.</div>
             </motion.div>
             <motion.div
@@ -138,7 +138,7 @@ const Services = () => {
             transition={{duration:1,delay:1,ease:'circInOut'}}
             className=' lg:w-[50%] border rounded-3xl p-10 shadow-lg'>
               <div className=' text-xl font-semibold mb-5'>Networking</div>
-              <div className='text-[#6b6b6b]'>Absy Solutions offers advanced networking solutions to enhance your connectivity and streamline communication. 
+              <div className='text-[#6b6b6b]'>Absy IT Solutions offers advanced networking solutions to enhance your connectivity and streamline communication. 
               Our services ensure reliable, secure, and efficient network infrastructure tailored to meet your business needs.</div>
             </motion.div>
             <motion.div
@@ -161,7 +161,7 @@ const Services = () => {
             transition={{duration:1,delay:1,ease:'circInOut'}}
             className='lg:w-[50%] border rounded-3xl p-10 shadow-lg'>
               <div className=' text-xl font-semibold mb-5'>Intercom & EPABX</div>
-              <div className='text-[#6b6b6b]'>Absy Solutions provides efficient intercom and EPABX systems to enhance internal communication. 
+              <div className='text-[#6b6b6b]'>Absy IT Solutions provides efficient intercom and EPABX systems to enhance internal communication. 
               Our solutions offer clear, reliable connectivity, simplifying interactions and boosting organizational efficiency</div>
             </motion.div>
             <motion.div
@@ -267,7 +267,7 @@ const Services = () => {
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView15 ?  { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 1,delay:1, ease: "easeInOut" }}
-            className='md:px-52 text-[#6b6b6b]'>At Absy Solutions, we deliver comprehensive software services that cater to the diverse needs of modern businesses. Our robust process ensures that every solution is designed, developed, and implemented with precision and excellence. From initial consultation to ongoing support, we are committed to providing software that drives efficiency, innovation, and growth.</motion.div>
+            className='md:px-52 text-[#6b6b6b]'>At Absy IT Solutions, we deliver comprehensive software services that cater to the diverse needs of modern businesses. Our robust process ensures that every solution is designed, developed, and implemented with precision and excellence. From initial consultation to ongoing support, we are committed to providing software that drives efficiency, innovation, and growth.</motion.div>
           </div>
           <div className=' grid grid-cols-1 gap-10 md:grid-cols-2'>
             <motion.div
