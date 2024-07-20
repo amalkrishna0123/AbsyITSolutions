@@ -633,7 +633,7 @@ const Home = () => {
                     initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
                     animate={inView11 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
                     transition={{ duration: 2.6, delay:1, ease: "easeInOut" }}
-                    className=' text-center text-sm mb-10 text-[#6b6b6b] md:text-base'>Reach out to Absy Solutions for all your inquiries and support. Our team is here to assist you and provide 
+                    className=' text-center text-sm mb-10 text-[#6b6b6b] md:text-base'>Reach out to Absy IT Solutions for all your inquiries and support. Our team is here to assist you and provide 
                     the information you need. Contact us today to start a conversation</motion.div>
                     <motion.div
                     ref={ref26}
