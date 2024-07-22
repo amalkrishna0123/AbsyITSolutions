@@ -50,7 +50,7 @@ const About = () => {
   const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
   const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
   return (
-    <div className=' md:mt-16'>
+    <div className='mt-20 lg:mt-28'>
       {/* Line */}
       <div className=' absolute -z-20 md:hidden'>
         <img src={Line} className=' mix-blend-multiply opacity-15' alt="" />

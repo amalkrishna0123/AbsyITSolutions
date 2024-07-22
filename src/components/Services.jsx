@@ -51,7 +51,7 @@ const Services = () => {
   const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
   const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
   return (
-    <div>
+    <div className='mt-20 lg:mt-28'>
       <div className='fixed blur-[30px] w-full h-full bg-[#2916ff5b] -z-50 hidden'>
 
       </div>

@@ -71,7 +71,7 @@ const Clients = () => {
   const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
 
   return (
-    <div>
+    <div className='mt-20 lg:mt-28'>
       <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${clients})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
           <img src={blue} className=' w-full h-full' alt="" />

@@ -52,7 +52,7 @@ const Softwares = () => {
   const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
   const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
   return (
-    <div>
+    <div className='mt-20 lg:mt-28'>
       <div className='fixed blur-[30px] w-full h-full hidden bg-[#b6db31a2] -z-50'></div>
       <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${software})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
