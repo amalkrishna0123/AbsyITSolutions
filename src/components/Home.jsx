@@ -372,7 +372,7 @@ const Home = () => {
                 initial={{y:-50,opacity:0}}
                 animate={inView17 ? {y:0,opacity:1} : {}}
                 transition={{duration:.8, delay:.8, ease:"easeInOut"}}
-                className=' w-[130px] h-auto'>
+                className=' w-[160px] h-auto'>
                     <img src={vtask} className='ScaleUpImg' alt="" />
                 </motion.div>
                 <motion.div
@@ -380,7 +380,7 @@ const Home = () => {
                 initial={{y:-50,opacity:0}}
                 animate={inView18 ? {y:0,opacity:1} : {}}
                 transition={{duration:.9, delay:.9, ease:"easeInOut"}}
-                className=' w-[130px] h-auto'>
+                className=' w-[160px] h-auto'>
                     <img src={dine} className='ScaleUpImg' alt="" />
                 </motion.div>
                 <motion.div
@@ -388,7 +388,7 @@ const Home = () => {
                 initial={{y:-50,opacity:0}}
                 animate={inView19 ? {y:0,opacity:1} : {}}
                 transition={{duration:1, delay:1, ease:"easeInOut"}}
-                className=' w-[130px] h-auto'>
+                className=' w-[140px] h-auto'>
                     <img src={clublogic} className='ScaleUpImg' alt="" />
                 </motion.div>
                 <motion.div
@@ -404,7 +404,7 @@ const Home = () => {
                 initial={{y:-50,opacity:0}}
                 animate={inView21 ? {y:0,opacity:1} : {}}
                 transition={{duration:1.2, delay:1.2, ease:"easeInOut"}}
-                className=' w-[130px] h-auto'>
+                className=' w-[160px] h-auto'>
                     <img src={auric} className='ScaleUpImg' alt="" />
                 </motion.div>
                 <motion.div

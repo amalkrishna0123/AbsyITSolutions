@@ -17,6 +17,7 @@ import banner2 from "../assets/company.jpg"
 import bottompng from "../assets/bottompng.png"
 import blue from "../assets/blue1.png"
 import networking1 from "../assets/networking1.jpg" 
+import biometrics from "../assets/biometrics.png"
 
 
 const Services = () => {
@@ -109,7 +110,7 @@ const Services = () => {
             ref={ref2}
             initial={{x:-100, opacity:0, scale:0}}
             animate={inView2 ? {x:0, opacity:1,scale:1} : {}}
-            transition={{duration:1.5,delay:1,ease:'circInOut'}}
+            transition={{duration:1.5,delay:.3,ease:'circInOut'}}
             className='lg:w-[50%] border rounded-3xl p-10 shadow-lg'>
               <div className=' text-xl font-semibold mb-5'>CCTV & Security Systems</div>
               <div className='text-[#6b6b6b]'>Absy IT Solutions delivers cutting-edge CCTV and security systems to safeguard your property. Our solutions offer 
@@ -119,7 +120,7 @@ const Services = () => {
             ref={ref3}
             initial={{x:100, opacity:0, scale:0}}
             animate={inView3 ? {x:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:.4,ease:'circInOut'}}
             className=' lg:w-[50%]'>
               <div>
                 <img src={cctv} alt="" />
@@ -135,7 +136,7 @@ const Services = () => {
             ref={ref4}
             initial={{x:-100, opacity:0, scale:0}}
             animate={inView4 ? {x:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:.3,ease:'circInOut'}}
             className=' lg:w-[50%] border rounded-3xl p-10 shadow-lg'>
               <div className=' text-xl font-semibold mb-5'>Networking</div>
               <div className='text-[#6b6b6b]'>Absy IT Solutions offers advanced networking solutions to enhance your connectivity and streamline communication. 
@@ -145,7 +146,7 @@ const Services = () => {
             ref={ref5}
             initial={{x:100, opacity:0, scale:0}}
             animate={inView5 ? {x:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:.3,ease:'circInOut'}}
             className='lg:w-[50%]'>
               <div>
                 <img src={networking} alt="" />
@@ -158,7 +159,7 @@ const Services = () => {
             ref={ref6}
             initial={{x:-100, opacity:0, scale:0}}
             animate={inView6 ? {x:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:.3,ease:'circInOut'}}
             className='lg:w-[50%] border rounded-3xl p-10 shadow-lg'>
               <div className=' text-xl font-semibold mb-5'>Intercom & EPABX</div>
               <div className='text-[#6b6b6b]'>Absy IT Solutions provides efficient intercom and EPABX systems to enhance internal communication. 
@@ -168,10 +169,34 @@ const Services = () => {
             ref={ref7}
             initial={{x:100, opacity:0, scale:0}}
             animate={inView7 ? {x:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'circInOut'}}
+            transition={{duration:1,delay:.3,ease:'circInOut'}}
             className='lg:w-[50%]'>
               <div>
                 <img src={intercom} alt="" />
+              </div>
+            </motion.div>
+          </div>
+
+          <div className=' md:flex md:flex-row-reverse md:justify md:items-center md:gap-10 mb-10'>
+            <motion.div
+            ref={ref22}
+            initial={{x:-100, opacity:0, scale:0}}
+            animate={inView22 ? {x:0, opacity:1,scale:1} : {}}
+            transition={{duration:1,delay:.3,ease:'circInOut'}}
+            className=' lg:w-[50%] border rounded-3xl p-10 shadow-lg'>
+              <div className=' text-xl font-semibold mb-5'>Biometrics</div>
+              <div className='text-[#6b6b6b]'>
+                Absy IT Solutions provides cutting-edge biometric solutions to enhance security and streamline access control. Our services offer reliable, secure, and efficient biometric systems tailored to meet the unique needs of your business.
+              </div>
+            </motion.div>
+            <motion.div
+            ref={ref24}
+            initial={{x:100, opacity:0, scale:0}}
+            animate={inView24 ? {x:0, opacity:1,scale:1} : {}}
+            transition={{duration:1,delay:.3,ease:'circInOut'}}
+            className='lg:w-[50%]'>
+              <div>
+                <img src={biometrics} alt="" />
               </div>
             </motion.div>
           </div>
@@ -260,13 +285,13 @@ const Services = () => {
             ref={ref14}
             initial={{opacity:0}}
             animate={inView14 ? {opacity:1} : {}}
-            transition={{duration:1,delay:1.2,ease:'linear'}}
+            transition={{duration:1,delay:.3,ease:'linear'}}
             className=' text-2xl font-bold mb-5 text-[#291770] lg:text-[42px]'>Our Services & Processing</motion.div>
             <motion.div
             ref={ref15}
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView15 ?  { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
-            transition={{ duration: 1,delay:1, ease: "easeInOut" }}
+            transition={{ duration: 1,delay:.3, ease: "easeInOut" }}
             className='md:px-52 text-[#6b6b6b]'>At Absy IT Solutions, we deliver comprehensive software services that cater to the diverse needs of modern businesses. Our robust process ensures that every solution is designed, developed, and implemented with precision and excellence. From initial consultation to ongoing support, we are committed to providing software that drives efficiency, innovation, and growth.</motion.div>
           </div>
           <div className=' grid grid-cols-1 gap-10 md:grid-cols-2'>
@@ -274,7 +299,7 @@ const Services = () => {
             ref={ref16}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView16 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'backInOut'}}
+            transition={{duration:1,delay:.3,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={initial} alt="" />
@@ -290,7 +315,7 @@ const Services = () => {
             ref={ref17}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView17 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1.2,ease:'backInOut'}}
+            transition={{duration:1,delay:.3,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={designsolution} alt="" />
@@ -306,7 +331,7 @@ const Services = () => {
             ref={ref18}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView18 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'backInOut'}}
+            transition={{duration:1,delay:.3,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={productselection} alt="" />
@@ -322,7 +347,7 @@ const Services = () => {
             ref={ref19}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView19 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1.2,ease:'backInOut'}}
+            transition={{duration:1,delay:.3,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={installsetup} alt="" />
@@ -338,7 +363,7 @@ const Services = () => {
             ref={ref20}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView20 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1,ease:'backInOut'}}
+            transition={{duration:1,delay:.3,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 p-5 w-full h-[330px] md:h-[300px] rounded-xl shadow-[inset_-12px_-8px_40px_#46464620] border'>
                 <div className='w-[30%]'>
                   <img src={initial} alt="" />
@@ -355,7 +380,7 @@ const Services = () => {
             ref={ref21}
             initial={{y:100, opacity:0, scale:0}}
             animate={inView21 ? {y:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,delay:1.2,ease:'backInOut'}}
+            transition={{duration:1,delay:.3,ease:'backInOut'}}
             className='flex items-start justify-center gap-10 shadow-[inset_-12px_-8px_40px_#46464620] border p-5 w-full h-[330px] md:h-[300px] rounded-xl'>
                 <div className='w-[30%]'>
                   <img src={ongoing} alt="" />

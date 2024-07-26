@@ -19,6 +19,12 @@ import banner2 from "../assets/company.jpg"
 import bottompng from "../assets/bottompng.png"
 import blue from "../assets/blue1.png"
 import software from "../assets/software1.jpg"
+import takspro from "../assets/taskpro.png"
+import ewaytask from "../assets/ewaytask.png"
+import dinepro from "../assets/dine pro.png"
+import magicpda from "../assets/magic pda .png"
+import dinekot from "../assets/dine kot.png"
+import mobileapp from "../assets/mobile-apps.png"
 
 
 const Softwares = () => {
@@ -51,6 +57,14 @@ const Softwares = () => {
   const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
   const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
   const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
+  const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
+  const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
+  const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
+  const { ref: ref28, inView: inView28 } = useInView({ triggerOnce: true });
+  const { ref: ref29, inView: inView29 } = useInView({ triggerOnce: true });
+  const { ref: ref30, inView: inView30 } = useInView({ triggerOnce: true });
+  const { ref: ref31, inView: inView31} = useInView({ triggerOnce: true });
+
   return (
     <div className='mt-20 lg:mt-28'>
       <div className='fixed blur-[30px] w-full h-full hidden bg-[#b6db31a2] -z-50'></div>
@@ -211,6 +225,109 @@ const Softwares = () => {
               room booking, billing, housekeeping, and reporting, automating manual tasks and integrating with other systems 
               for improved efficiency.
               </div>
+            </motion.div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section className='section md:px-10 lg:max-w-[1200px] mb-16'>
+        <div>
+          <div className=' md:flex justify-center items-center gap-10'>
+            <div className=' md:w-[50%]'>
+              <motion.div
+              ref={ref24}
+              initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+              animate={inView24 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+              transition={{ duration: 2, ease: "easeInOut" }}
+              className='text-2xl font-bold mb-5 lg:text-[42px] text-[#291770]'>Our Mobile Apps</motion.div>
+              <motion.div
+              ref={ref25}
+              initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+              animate={inView25 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+              transition={{ duration: 2, ease: "easeInOut" }}
+              className='text-[#6b6b6b]'>At Absy IT Solutions, our groundbreaking mobile application development services are designed to propel your business forward. We create innovative, custom mobile apps that boost efficiency, support growth, and seamlessly integrate into your operations for unparalleled performance.</motion.div>
+            </div>
+            <motion.div
+            ref={ref26}
+            initial={{x:-100, opacity:0, scale:0}}
+            animate={inView26 ? {x:0, opacity:1,scale:1} : {}}
+            transition={{duration:1,ease:'backInOut'}}
+            className=' md:w-[50%]'>
+              <img src={mobileapp} className=' drop-shadow-lg' alt="" />
+            </motion.div>
+          </div>
+
+          <div className=' grid place-items-center gap-10 grid-cols-1 md:grid-cols-2 max-w-[1200px] lg:mx-auto mt-10'>
+
+            <motion.div
+             ref={ref27}
+             initial={{y:-100, opacity:0}}
+             animate={inView27 ? {y:0, opacity:1} : {}}
+             transition={{duration:2.1,delay:2.1, ease:'backInOut'}}
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
+                  <img className=' w-[80px]' src={takspro} alt="" />
+                </div>
+                <div className='text-[#6b6b6b]'>
+                Task Pro is a user-friendly Task OS reporting app that streamlines the management of financial transactions, stock levels, sales, and deliveries. It automates reporting, integrates with other systems, and provides real-time data for improved decision-making and efficiency.
+                </div>
+            </motion.div>
+
+            <motion.div
+             ref={ref28}
+             initial={{y:-100, opacity:0}}
+             animate={inView29 ? {y:0, opacity:1} : {}}
+             transition={{duration:2.1,delay:2.1, ease:'backInOut'}}
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
+                  <img className=' w-[80px]' src={ewaytask} alt="" />
+                </div>
+                <div className='text-[#6b6b6b]'>
+                  E Way Task is an online sales order, sales, and collection app for Task users. It simplifies order management, streamlines sales processes, and ensures efficient collection, providing a seamless experience for businesses and their customers.
+                </div>
+            </motion.div>
+
+            <motion.div
+             ref={ref29}
+             initial={{y:-100, opacity:0}}
+             animate={inView29 ? {y:0, opacity:1} : {}}
+             transition={{duration:2.1,delay:2.1, ease:'backInOut'}}
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
+                  <img className=' w-[80px]' src={dinepro} alt="" />
+                </div>
+                <div className='text-[#6b6b6b]'>
+                  Dine Pro is a comprehensive dine reporting application that streamlines the management of restaurant operations. It provides detailed reports on sales, inventory, and customer behavior, helping businesses make informed decisions and improve efficiency.
+                </div>
+            </motion.div>
+
+            <motion.div
+             ref={ref30}
+             initial={{y:-100, opacity:0}}
+             animate={inView30 ? {y:0, opacity:1} : {}}
+             transition={{duration:2.1,delay:2.1, ease:'backInOut'}}
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
+                  <img className=' w-[80px]' src={magicpda} alt="" />
+                </div>
+                <div className='text-[#6b6b6b]'>
+                  Magic PDA is a stock-taking and stock-tracker app that simplifies inventory management. It allows businesses to efficiently track stock levels, conduct accurate stock takes, and ensure real-time inventory updates for improved operational efficiency.
+                </div>
+            </motion.div>
+
+            <motion.div
+             ref={ref31}
+             initial={{y:-100, opacity:0}}
+             animate={inView31 ? {y:0, opacity:1} : {}}
+             transition={{duration:2.1,delay:2.1, ease:'backInOut'}}
+            className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
+              <div className='font-semibold text-lg md:mb-5 mb-3'>
+                  <img className=' w-[60px]' src={dinekot} alt="" />
+                </div>
+                <div className='text-[#6b6b6b]'>
+                  Dine KOT is an efficient KOT application designed to streamline kitchen order management. It simplifies the process of order taking, reduces errors, and enhances communication between the kitchen and service staff, ensuring smooth and efficient restaurant operations.
+                </div>
             </motion.div>
             
           </div>

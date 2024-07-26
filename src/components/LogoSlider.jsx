@@ -15,26 +15,22 @@ import logo13 from "../assets/part13.png"
 import logo14 from "../assets/part14.png"
 import logo15 from "../assets/part15.png"
 import { motion } from "framer-motion"
+import posi from "../assets/posi.png"
+import impact from "../assets/impact.png"
+import honey from "../assets/honey.png"
+import hik from "../assets/hik.png"
+import dlink from "../assets/dlink.png"
+import tvs from "../assets/tvs.png"
 
 
 const LogoSlider = () => {
     const logos = [
-        { id: 1, src: logo1},
-        { id: 2, src: logo2},
-        { id: 3, src: logo3},
-        { id: 4, src: logo4},
-        { id: 5, src: logo5},
-        { id: 6, src: logo6},
-        { id: 7, src: logo7},
-        { id: 8, src: logo8},
-        { id: 9, src: logo9},
-        { id: 10, src: logo10},
-        { id: 11, src: logo11},
-        { id: 12, src: logo12},
-        { id: 13, src: logo13},
-        { id: 14, src: logo14},
-        { id: 15, src: logo15},
-        
+        { id: 1, src: posi},
+        { id: 2, src: impact},
+        { id: 3, src: honey},
+        { id: 4, src: hik},
+        { id: 5, src: dlink},
+        { id: 6, src: tvs},
     ];
     const animationVariants = {
         animate: {

@@ -29,7 +29,7 @@ const Footer = () => {
                 <img className=' h-auto w-[200px]' src={logo} alt="" />
             </div>
             <div className=' text-sm text-[#6b6b6b]'>
-                At Absy Solutions, we are dedicated to providing innovative software and hardware solutions that drive business success. Our commitment to quality, expertise, and customer satisfaction sets us apart. Contact us today to discover how our tailored solutions can enhance your operations and support your growth.
+                At Absy IT Solutions, we are dedicated to providing innovative software and hardware solutions that drive business success. Our commitment to quality, expertise, and customer satisfaction sets us apart. Contact us today to discover how our tailored solutions can enhance your operations and support your growth.
             </div>
         </div>
 
@@ -43,6 +43,7 @@ const Footer = () => {
                     <li>Computer Hardware Sales & Services</li>
                     <li>CCTV & Security System</li>
                     <li>Intercom & EPABX</li>
+                    <li>Biometrics</li>
                 </ul>
             </div>
         </div>
