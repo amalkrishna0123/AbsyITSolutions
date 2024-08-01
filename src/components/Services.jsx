@@ -18,6 +18,8 @@ import bottompng from "../assets/bottompng.png"
 import blue from "../assets/blue1.png"
 import networking1 from "../assets/networking1.jpg" 
 import biometrics from "../assets/biometrics.png"
+import whatsapp from "../assets/whatsapp.png"
+
 
 
 const Services = () => {
@@ -53,6 +55,11 @@ const Services = () => {
   const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
   return (
     <div className='mt-20 lg:mt-28'>
+      <div className=' fixed h-full right-0 z-40 flex justify-end items-center'>
+        <div className=' mr-10 mt-[400px]'>
+            <a href=""><img src={whatsapp} className='w-auto h-[60px] lg:h-[70px] cursor-pointer' alt="" /></a>
+        </div>
+      </div>
       <div className='fixed blur-[30px] w-full h-full bg-[#2916ff5b] -z-50 hidden'>
 
       </div>

@@ -17,6 +17,8 @@ import { useInView } from 'react-intersection-observer';
 import banner2 from "../assets/about2.jpg"
 import blue from "../assets/blue1.png"
 import bottompng from "../assets/bottompng.png"
+import whatsapp from "../assets/whatsapp.png"
+
 
 
 const About = () => {
@@ -51,6 +53,11 @@ const About = () => {
   const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
   return (
     <div className='mt-20 lg:mt-28'>
+      <div className=' fixed h-full right-0 z-40 flex justify-end items-center'>
+        <div className=' mr-10 mt-[400px]'>
+            <a href=""><img src={whatsapp} className='w-auto h-[60px] lg:h-[70px] cursor-pointer' alt="" /></a>
+        </div>
+      </div>
       {/* Line */}
       <div className=' absolute -z-20 md:hidden'>
         <img src={Line} className=' mix-blend-multiply opacity-15' alt="" />

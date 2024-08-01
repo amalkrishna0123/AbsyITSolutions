@@ -33,6 +33,8 @@ import blue from "../assets/blue1.png"
 import bottompng from "../assets/bottompng.png"
 import banner2 from "../assets/company.jpg"
 import clients from "../assets/clients.jpg"
+import whatsapp from "../assets/whatsapp.png"
+
 
 
 
@@ -72,6 +74,11 @@ const Clients = () => {
 
   return (
     <div className='mt-20 lg:mt-28'>
+      <div className=' fixed h-full right-0 z-40 flex justify-end items-center'>
+        <div className=' mr-10 mt-[400px]'>
+            <a href=""><img src={whatsapp} className='w-auto h-[60px] lg:h-[70px] cursor-pointer' alt="" /></a>
+        </div>
+      </div>
       <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${clients})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
           <img src={blue} className=' w-full h-full' alt="" />

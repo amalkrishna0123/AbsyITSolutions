@@ -44,7 +44,10 @@ const Navbar = () => {
                         
                     </div>
                     <div>
-                        <a className=' hidden lg:block' href="https://absyitsolutions@gmail.com"><div className='mb-2 font-semibold text-[#291770]'>absyitsolutions@gmail.com</div></a>
+                        <a href="tel:+917411071274" className='hidden lg:block font-bold text-[#e87817]'>+91 7411071274</a>
+                        <a className='hidden lg:block' href="mailto:absyitsolutions@gmail.com">
+                        <div className='mb-2 font-semibold text-[#291770]'>absyitsolutions@gmail.com</div>
+</a>
                     </div>
                     <div className='cursor-pointer text-[#e87817] md:hidden'>
                         <RiMenu3Line onClick={() => setMenuOpen(true)} className='text-3xl'/>

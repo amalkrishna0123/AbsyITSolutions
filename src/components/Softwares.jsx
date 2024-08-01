@@ -25,6 +25,8 @@ import dinepro from "../assets/dine pro.png"
 import magicpda from "../assets/magic pda .png"
 import dinekot from "../assets/dine kot.png"
 import mobileapp from "../assets/mobile-apps.png"
+import whatsapp from "../assets/whatsapp.png"
+
 
 
 const Softwares = () => {
@@ -67,6 +69,12 @@ const Softwares = () => {
 
   return (
     <div className='mt-20 lg:mt-28'>
+      <div className=' fixed h-full right-0 z-40 flex justify-end items-center'>
+        <div className=' mr-10 mt-[400px]'>
+            <a href=""><img src={whatsapp} className='w-auto h-[60px] lg:h-[70px] cursor-pointer' alt="" /></a>
+        </div>
+      </div>
+
       <div className='fixed blur-[30px] w-full h-full hidden bg-[#b6db31a2] -z-50'></div>
       <div className='relative mt-20 w-full h-[500px] lg:h-[650px] flex justify-center items-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(${software})`, backgroundPosition: 'bottom' }}>
         <div className='w-full h-full'>
@@ -240,7 +248,7 @@ const Softwares = () => {
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView24 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2, ease: "easeInOut" }}
-              className='text-2xl font-bold mb-5 lg:text-[42px] text-[#291770]'>Our Mobile Apps</motion.div>
+              className='text-2xl font-bold mb-5 lg:text-[42px] text-[#291770] leading-normal'>Our Mobile Apps</motion.div>
               <motion.div
               ref={ref25}
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
@@ -269,8 +277,8 @@ const Softwares = () => {
               <div className='font-semibold text-lg md:mb-5 mb-3'>
                   <img className=' w-[80px]' src={takspro} alt="" />
                 </div>
-                <div className='text-[#6b6b6b]'>
-                Task Pro is a user-friendly Task OS reporting app that streamlines the management of financial transactions, stock levels, sales, and deliveries. It automates reporting, integrates with other systems, and provides real-time data for improved decision-making and efficiency.
+                <div className='text-[#6b6b6b] text-sm'>
+                TASK PRO is an userfriendly mobile application, which is  designed for monitor their businness in real time. Various types of business reports are available in this mobile application.
                 </div>
             </motion.div>
 
@@ -283,8 +291,8 @@ const Softwares = () => {
               <div className='font-semibold text-lg md:mb-5 mb-3'>
                   <img className=' w-[80px]' src={ewaytask} alt="" />
                 </div>
-                <div className='text-[#6b6b6b]'>
-                  E Way Task is an online sales order, sales, and collection app for Task users. It simplifies order management, streamlines sales processes, and ensures efficient collection, providing a seamless experience for businesses and their customers.
+                <div className='text-[#6b6b6b] text-sm'>
+                EWAY TASK is an ultimate solution designed for distribution based business concepts. In this app we are providing the facilities for  direct sales , order taking , sales return and collections. user wise and area wise entries are available in this app.
                 </div>
             </motion.div>
 
@@ -297,7 +305,7 @@ const Softwares = () => {
               <div className='font-semibold text-lg md:mb-5 mb-3'>
                   <img className=' w-[80px]' src={dinepro} alt="" />
                 </div>
-                <div className='text-[#6b6b6b]'>
+                <div className='text-[#6b6b6b] text-sm'>
                   Dine Pro is a comprehensive dine reporting application that streamlines the management of restaurant operations. It provides detailed reports on sales, inventory, and customer behavior, helping businesses make informed decisions and improve efficiency.
                 </div>
             </motion.div>
@@ -309,10 +317,10 @@ const Softwares = () => {
              transition={{duration:2.1,delay:2.1, ease:'backInOut'}}
             className='BoxHover w-full h-[280px] md:h-[250px] border p-5 rounded-2xl shadow-[inset_-12px_-8px_40px_#46464620]'>
               <div className='font-semibold text-lg md:mb-5 mb-3'>
-                  <img className=' w-[80px]' src={magicpda} alt="" />
+                  <img className=' w-[60px]' src={magicpda} alt="" />
                 </div>
-                <div className='text-[#6b6b6b]'>
-                  Magic PDA is a stock-taking and stock-tracker app that simplifies inventory management. It allows businesses to efficiently track stock levels, conduct accurate stock takes, and ensure real-time inventory updates for improved operational efficiency.
+                <div className='text-[#6b6b6b] text-sm'>
+                Magic PDA is our one of the most powerful android application for managing  hypermarket and supermarkets various activities. We provide various facilities in this app like stock taking process , checking product details with live stock , GRN Entries and Floor Billing. And also in this app have an advanced facility to print shelf tag with bluetooth printer.
                 </div>
             </motion.div>
 
@@ -325,8 +333,8 @@ const Softwares = () => {
               <div className='font-semibold text-lg md:mb-5 mb-3'>
                   <img className=' w-[60px]' src={dinekot} alt="" />
                 </div>
-                <div className='text-[#6b6b6b]'>
-                  Dine KOT is an efficient KOT application designed to streamline kitchen order management. It simplifies the process of order taking, reduces errors, and enhances communication between the kitchen and service staff, ensuring smooth and efficient restaurant operations.
+                <div className='text-[#6b6b6b] text-sm'>
+                DINE KOT application is designed for managing flexible operations of restaurents. In this app having the facilities for KOT entry and billing facility.Can easily manage multiple kitchen wise printing.
                 </div>
             </motion.div>
             

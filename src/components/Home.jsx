@@ -38,6 +38,7 @@ import content3 from "../assets/content3.jpg"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
+import whatsapp from "../assets/whatsapp.png"
 
 
 
@@ -200,6 +201,11 @@ const Home = () => {
 
   return (
    <div>
+    <div className=' fixed h-full right-0 z-40 flex justify-end items-center'>
+        <div className=' mr-10 mt-[400px]'>
+            <a href=""><img src={whatsapp} className='w-auto h-[60px] lg:h-[70px] cursor-pointer' alt="" /></a>
+        </div>
+    </div>
     <section className=' mt-20 lg:mt-28 relative h-[550px] lg:h-full'>
         <div className=' h-full w-full'>
             
