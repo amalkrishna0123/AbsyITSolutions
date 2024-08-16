@@ -235,6 +235,10 @@ body{
   background: #291770;
   color: white;
 }
+.outlineText{
+  color: transparent;
+  -webkit-text-stroke: 2px #e87817;
+}
 /* #e87817 */
 /* #4d4a47 */
 /* #17171b */

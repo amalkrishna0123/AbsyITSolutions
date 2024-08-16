@@ -257,12 +257,13 @@ const Softwares = () => {
               className='text-[#6b6b6b]'>At Absy IT Solutions, our groundbreaking mobile application development services are designed to propel your business forward. We create innovative, custom mobile apps that boost efficiency, support growth, and seamlessly integrate into your operations for unparalleled performance.</motion.div>
             </div>
             <motion.div
-            ref={ref26}
-            initial={{x:-100, opacity:0, scale:0}}
-            animate={inView26 ? {x:0, opacity:1,scale:1} : {}}
-            transition={{duration:1,ease:'backInOut'}}
-            className=' md:w-[50%]'>
-              <img src={mobileapp} className=' drop-shadow-lg' alt="" />
+              ref={ref26}
+              initial={{ x: -100, opacity: 0, scale: 0 }}
+              animate={inView26 ? { x: 0, opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 1, delay:.5, ease: 'backInOut' }}
+              className='md:w-[50%]'
+            >
+              <img src={mobileapp} className='drop-shadow-lg' alt="" />
             </motion.div>
           </div>
 

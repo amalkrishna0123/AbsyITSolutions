@@ -85,7 +85,59 @@ const About = () => {
         </div>
       </div>
 
+      {/* Sub About */}
       <section className='section md:px-10 mt-10 lg:mt-0'>
+        <div className='mb-10 lg:flex lg:justify-center max-w-[1200px] lg:mx-auto lg:items-center'>
+          <div>
+            <motion.div 
+              ref={ref17}
+              initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+              animate={inView17 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+              transition={{ duration: 2, ease: "easeInOut" }}
+              className=' text-center text-xl leading-normal lg:text-[42px] font-bold mb-5 text-[#291770]'>Redefining Possibilities <span className='block'>with Precision Technology</span></motion.div>
+            <motion.div 
+            ref={ref18}
+            initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
+            animate={inView18 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
+            transition={{ duration: 2, ease: "easeInOut" }}
+            className=' text-center text-[#6b6b6b] mb-10 lg:px-56'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae dicta corporis in quasi reprehenderit, tempora eum vel similique libero maiores voluptatem quis rerum recusandae. Laudantium, similique! Id, quibusdam hic.Facilis doloribus architecto minima reiciendis nemo impedit a assumenda aspernatur? Sunt modi sint esse, excepturi minima, corporis labore et, a eligendi delectus animi recusandae. Commodi quisquam sit nulla quae voluptate?
+            </motion.div>
+
+            {/* Sub - About Contents */}
+            <motion.div
+            ref={ref19}
+            initial={{ opacity: 0, scale:0 }} 
+            animate={inView19 ? { opacity: 1, scale:1 } : {}} 
+            transition={{ duration: 1, ease: "backInOut" }}
+            className=' grid place-items-center grid-cols-1 gap-5 mb-10 md:flex md:justify-center md:items-center md:gap-10 lg:gap-20'>
+
+              <div className=' flex justify-center items-center gap-2'>
+                <div className='text-[42px] font-bold outlineText lg:text-[60px]'>15+</div>
+                <div className='font-bold text-[#291770] lg:text-lg'>Years of <span className='block '>Experience</span></div>
+              </div>
+
+              <div className='flex justify-center items-center gap-2'>
+                <div className='outlineText text-[42px] font-bold lg:text-[60px]'>20+</div>
+                <div className='font-bold text-[#291770] lg:text-lg'>Skilled <span className='block'>Professionals</span></div>
+              </div>
+
+              <div className='flex justify-center items-center gap-2'>
+                <div className='outlineText text-[42px] font-bold lg:text-[60px]'>300+</div>
+                <div className='font-bold text-[#291770] lg:text-lg'>Projects <span className='block'>World Wide</span></div>
+              </div>
+
+              <div className='flex justify-center items-center gap-2'>
+                <div className='outlineText text-[42px] font-extrabold lg:text-[60px]'>2000+</div>
+                <div className='font-bold text-[#291770] lg:text-lg'>Satisfied <span className='block'>Clients</span></div>
+              </div>
+
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className='section md:px-10 lg:mt-0'>
           <div className=' mb-10 lg:flex lg:justify-center max-w-[1200px] lg:mx-auto lg:items-center'>
             <div className=' lg:w-[60%]'>
               <div>
@@ -109,7 +161,7 @@ const About = () => {
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
               animate={inView3 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
               transition={{ duration: 2, ease: "easeInOut" }}
-              className=' text-xl leading-[42px] lg:text-[42px] font-bold mb-5 text-[#291770]'>We are Focused on <span className=' block'>Exceptional Service and Innovation</span></motion.div>
+              className=' text-xl md:leading-[42px] lg:text-[42px] font-bold mb-5 text-[#291770]'>We are Focused on <span className=' block'>Exceptional Service and Innovation</span></motion.div>
               <motion.div
               ref={ref4}
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
@@ -189,8 +241,8 @@ const About = () => {
               initial={{y:-100, opacity:0}}
               animate={inView11 ? {y:0, opacity:1} : {}}
               transition={{duration:1,delay:1, ease:'backInOut'}}
-              className='ScaleUpImg w-full h-[400px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
-                  <div className='w-full h-[330px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team1} alt="" /></div>
+              className='ScaleUpImg w-full h-[400px] lg:h-[450px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
+                  <div className='w-full h-[330px] lg:h-[380px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team1} alt="" /></div>
                   <div className=' text-center py-2'>
                     <div className=' font-semibold text-xl'>Full Name</div>
                     <div>Designation</div>
@@ -201,8 +253,8 @@ const About = () => {
               initial={{y:-100, opacity:0}}
               animate={inView12 ? {y:0, opacity:1} : {}}
               transition={{duration:1,delay:1, ease:'backInOut'}}
-              className='ScaleUpImg w-full h-[400px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
-                  <div className='w-full h-[330px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team2} alt="" /></div>
+              className='ScaleUpImg w-full h-[400px] lg:h-[450px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
+                  <div className='w-full h-[330px] lg:h-[380px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team2} alt="" /></div>
                   <div className=' text-center py-2'>
                     <div className=' font-semibold text-xl'>Full Name</div>
                     <div>Designation</div>
@@ -213,8 +265,8 @@ const About = () => {
               initial={{y:-100, opacity:0}}
               animate={inView13 ? {y:0, opacity:1} : {}}
               transition={{duration:1,delay:1, ease:'backInOut'}}
-              className='ScaleUpImg w-full h-[400px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
-                  <div className='w-full h-[330px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team3} alt="" /></div>
+              className='ScaleUpImg w-full h-[400px] lg:h-[450px]  rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
+                  <div className='w-full h-[330px] lg:h-[380px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team3} alt="" /></div>
                   <div className=' text-center py-2'>
                     <div className=' font-semibold text-xl'>Full Name</div>
                     <div>Designation</div>
@@ -225,8 +277,8 @@ const About = () => {
               initial={{y:-100, opacity:0}}
               animate={inView14 ? {y:0, opacity:1} : {}}
               transition={{duration:1,delay:1, ease:'backInOut'}}
-              className='ScaleUpImg w-full h-[400px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
-                  <div className='w-full h-[330px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team4} alt="" /></div>
+              className='ScaleUpImg w-full h-[400px] lg:h-[450px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
+                  <div className='w-full h-[330px] lg:h-[380px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team4} alt="" /></div>
                   <div className=' text-center py-2'>
                     <div className=' font-semibold text-xl'>Full Name</div>
                     <div>Designation</div>
@@ -237,8 +289,8 @@ const About = () => {
               initial={{y:-100, opacity:0}}
               animate={inView15 ? {y:0, opacity:1} : {}}
               transition={{duration:1,delay:1, ease:'backInOut'}}
-              className='ScaleUpImg w-full h-[400px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
-                  <div className='w-full h-[330px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team5} alt="" /></div>
+              className='ScaleUpImg w-full h-[400px] lg:h-[450px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
+                  <div className='w-full h-[330px] lg:h-[380px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team5} alt="" /></div>
                   <div className=' text-center py-2'>
                     <div className=' font-semibold text-xl'>Full Name</div>
                     <div>Designation</div>
@@ -249,8 +301,8 @@ const About = () => {
               initial={{y:-100, opacity:0}}
               animate={inView16 ? {y:0, opacity:1} : {}}
               transition={{duration:1,delay:1, ease:'backInOut'}}
-              className='ScaleUpImg w-full h-[400px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
-                  <div className='w-full h-[330px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team6} alt="" /></div>
+              className='ScaleUpImg w-full h-[400px] lg:h-[450px] rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
+                  <div className='w-full h-[330px] lg:h-[380px] rounded-xl'><img className='w-full h-full object-cover rounded-xl' src={team6} alt="" /></div>
                   <div className=' text-center py-2'>
                     <div className=' font-semibold text-xl'>Full Name</div>
                     <div>Designation</div>
