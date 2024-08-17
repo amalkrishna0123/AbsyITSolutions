@@ -100,7 +100,7 @@ const About = () => {
             initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} 
             animate={inView18 ? { opacity: 1, clipPath: 'inset(0 0 0 0)' } : {}} 
             transition={{ duration: 2, ease: "easeInOut" }}
-            className=' text-center text-[#6b6b6b] mb-10 lg:px-56'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae dicta corporis in quasi reprehenderit, tempora eum vel similique libero maiores voluptatem quis rerum recusandae. Laudantium, similique! Id, quibusdam hic.Facilis doloribus architecto minima reiciendis nemo impedit a assumenda aspernatur? Sunt modi sint esse, excepturi minima, corporis labore et, a eligendi delectus animi recusandae. Commodi quisquam sit nulla quae voluptate?
+            className=' text-center text-[#6b6b6b] mb-10 lg:px-56'>Absy IT Solutions is a dynamic team of industry experts committed to providing innovative software and hardware solutions. We harness the power of advanced technologies to meet the evolving demands of today’s businesses, delivering end-to-end solutions that enhance productivity and foster growth across diverse sectors.
             </motion.div>
 
             {/* Sub - About Contents */}
